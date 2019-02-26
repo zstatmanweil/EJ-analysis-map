@@ -1,11 +1,21 @@
-This is the beginning of my Recurse Center project. I am conducting the same type of analysis I did for my thesis but this time entirely in Python. My thesis focused on Pennsylvania, but this project will focus on New Jersey so I can compare my results and see how the analysis may differ.  I am imagining my project will involve the following steps:
+## Introduction
+
+I am conducting the same type of analysis I did for my thesis but this time entirely in Python rather than desktop geospatial software. This project will give me the opportunity explore geospatial Python libraries, understand web development, and create a beautiful and useful web map where the user can explore drinking water quality and environmental justice concerns. My thesis focused on Pennsylvania, but this project will focus on New Jersey so I can compare my results and see how the results may differ between the two states.  
+
+## Research Questions
+
+1) Are there social disparities in CWS compliance with the SDWA? Are there more violations (total and health-based) in low-income communities, communities with a higher proportion of people of color, and/or rural communities?
+
+2) How do the results differ depending on the spatial analysis method used to estimate the demographic characteristics of the population served by the CWS? 
+
+## Tasks
 
 - [x] Access and explore the [Census demographic data by tract](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/Census.ipynb), specifically percent below the poverty line and percent people of color.
-- [x] Ue Jupyter Notebooks to explore public water system data, and estimate the population, and their sociodemographic characteristics, within each water system through [areal weighting.](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/SpatialAnalysis/ArealWeighting.ipynb)
+- [x] Use Jupyter Notebooks to explore public water system data, and estimate the population, and their sociodemographic characteristics, within each water system through [areal weighting.](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/SpatialAnalysis/ArealWeighting.ipynb)
 - [ ] Same as above but estimate population through [dasymetric mapping.](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/SpatialAnalysis/Dasymetric.ipynb)
-- [ ] Create classes/functions withat will automate the areal weighting and dasymetric processes.
+- [ ] Create classes/functions that will automate the areal weighting and dasymetric processes for others to use.
 - [ ] Create maps showing the results of my estimations.
-- [ ] Conduct a statistical analysis of the results to determining the correlation, if any, between the EJ variables and the SDWA violations.
+- [ ] Conduct a statistical analysis of the results to determining the correlation, if any, between the EJ variables and the SDWA violations. The negative binomial regression code I created for the Pennsylvania data can be found [here.](https://github.com/zstatmanweil/NegBinomialModel) 
 - [ ] Get those map  and statistical results on the web!
 
 
