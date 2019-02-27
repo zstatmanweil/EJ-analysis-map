@@ -1,6 +1,6 @@
 ## Introduction
 
-I am conducting the same type of analysis I did for my thesis but this time entirely in Python rather than with desktop geospatial software. This project will give me the opportunity to use geospatial Python libraries, understand web development, and create a beautiful and useful web map where the user can explore drinking water quality and environmental justice concerns. My thesis focused on Pennsylvania, but this project will focus on New Jersey so I can compare my results and see how the results may differ between the two states.  
+I am conducting the same type of spatial environmental justice analysis I did for my thesis on disparities in compliance with the Safe Drinking Water Act (SDWA) but this time entirely in Python rather than with desktop geospatial software (e.g., ArcGIS). Additionally, my thesis focused on Pennsylvania, but this project will focus on New Jersey so I can compare my results and see how the results compare between the two states.  This project will give me the opportunity to use geospatial Python libraries (e.g., geopandas, rasterio), understand web development, and create a beautiful and useful web map where the user can explore drinking water quality and environmental justice concerns.
 
 ## Research Questions
 
