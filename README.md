@@ -10,9 +10,12 @@ I am conducting the same type of spatial environmental justice analysis I did fo
 
 ## Tasks
 
-- [x] Access and explore the Census demographic data by tractspecifically percent below the poverty line and percent people of color. [`EJ-analysis-map/Census/Census.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/tree/master/Census)
-- [x] Use Jupyter Notebooks to explore public water system data, and estimate the population, and their sociodemographic characteristics, within each water system through areal weighting. [`EJ-analysis-map/SpatialAnalysis/ArealWeighting.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/SpatialAnalysis/ArealWeighting.ipynb)
-- [ ] Same as above but estimate population through dasymetric mapping. [`EJ-analysis-map/SpatialAnalysis/Dasymetric.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/SpatialAnalysis/Dasymetric.ipynb)
+- [x] Access and explore the Census demographic data by tractspecifically percent below the poverty line and percent people of color. 
+  - [`EJ-analysis-map/Census/Census.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/tree/master/Census)
+- [x] Use Jupyter Notebooks to explore public water system data, and estimate the population, and their sociodemographic characteristics, within each water system through areal weighting. 
+  - [`EJ-analysis-map/SpatialAnalysis/ArealWeighting.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/SpatialAnalysis/ArealWeighting.ipynb)
+- [ ] Same as above but estimate population through dasymetric mapping. 
+  - [`EJ-analysis-map/SpatialAnalysis/Dasymetric.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/SpatialAnalysis/Dasymetric.ipynb)
 - [ ] Create classes/functions that will automate the areal weighting and dasymetric processes for others to use.
 - [ ] Create maps showing the results of my estimations.
 - [ ] Conduct a statistical analysis of the results to determining the correlation, if any, between the EJ variables and the SDWA violations. The negative binomial regression code I created for the Pennsylvania data can be found here: [`NegBinomialModel`](https://github.com/zstatmanweil/NegBinomialModel) 
