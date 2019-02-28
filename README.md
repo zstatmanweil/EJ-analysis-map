@@ -18,7 +18,8 @@ I am conducting the same type of spatial environmental justice analysis I did fo
   - [`EJ-analysis-map/SpatialAnalysis/Dasymetric.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/SpatialAnalysis/Dasymetric.ipynb)
 - [ ] Create classes/functions that will automate the areal weighting and dasymetric processes for others to use.
 - [ ] Create maps showing the results of my estimations.
-- [ ] Conduct a statistical analysis of the results to determine the correlation, if any, between the EJ variables and the SDWA violations. The negative binomial regression code I created for the Pennsylvania data can be found here: [`NegBinomialModel`](https://github.com/zstatmanweil/NegBinomialModel) 
+- [ ] Conduct a statistical analysis of the results to determine the correlation, if any, between the EJ variables and the SDWA violations. The negative binomial regression code I created for the Pennsylvania data can be found here: [`NegBinomialModel`]
+  - (https://github.com/zstatmanweil/NegBinomialModel) 
 - [ ] Get the map  and statistical results on the web!
 
 
