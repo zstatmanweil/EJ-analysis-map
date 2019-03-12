@@ -55,7 +55,26 @@
         map.addControl(new mapboxgl.NavigationControl());
         function mapReset() {
 
-        };
+        }
+       
+        map.on('load', function() {
+            mapReset();
+            map.addSource("NJ", {
+                type: "geojson",
+                data:  'NJ_boundary.geojson'
+                });
+
+            map.addLayer({
+               id: 'new_jersey',
+               type: 'fill'
+               source: 'NJ', 
+               layout: {}
+               paint: {
+                    fill-color:'#088',
+                    fill-opacity: 0.8
+                }
+           })
+        });    
         </script>
 	</body>
 </html>
