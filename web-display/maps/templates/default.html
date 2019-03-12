@@ -61,17 +61,16 @@
             mapReset();
             map.addSource("NJ", {
                 type: "geojson",
-                data:  'NJ_boundary.geojson'
+                data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/web/web-display/maps/data/NJ_boundary.json'
                 });
 
             map.addLayer({
                id: 'new_jersey',
-               type: 'fill'
+               type: 'fill',
                source: 'NJ', 
                layout: {}
                paint: {
-                    fill-color:'#088',
-                    fill-opacity: 0.8
+                    fill-color:'#088'
                 }
            })
         });    
