@@ -7,14 +7,52 @@
     </head>
 
     <body>
+
+		<style>
+
+		.legend {
+			background-color: #fff;
+			border-radius: 3px;
+			bottom: 30px;
+			box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+			font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+			padding: 10px;
+			position: absolute;
+			right: 10px;
+			z-index: 1;
+			}
+
+		.legend h4 {
+			margin: 0 0 10px;
+			}
+
+		.legend div span {
+			border-radius: 50%;
+			display: inline-block;
+			height: 10px;
+			margin-right: 5px;
+			width: 10px;
+			}
+		</style>
+
       <h1>Safe Drinking Water Act (SDWA) Compliance in New Jersey (2012-2016)</h1>
       <div id='map' style='width: 100%; height: 400px;'></div>
+
+		<div id='all-violations' class='legend'>
+			<h4>SDWA Violations (2012-2016)</h4>
+			<div><span style='background-color: #FFEDA0'></span>5</div>
+			<div><span style='background-color: #FEB24C'></span>15</div>
+			<div><span style='background-color: #FC4E2A'></span>35</div>
+			<div><span style='background-color: #BD0026'></span>65</div>
+			<div><span style='background-color: #800026'></span>128</div>
+		</div>
+
     <div id='menu'>
         <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
         <label for='streets'>streets</label>
         <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
         <label for='satellite'>satellite</label>
-      </div>
+    </div>
 
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.min.js'></script>
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.css' type='text/css' />
@@ -23,8 +61,9 @@
         <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoienN0YXRtYW53ZWlsIiwiYSI6ImNqbWY3b3V2cjAyMWUzcXBmNXRzdHNnOWEifQ.E-JUGH3ab30ya_NXealg_A';
 
-        var colors = ['#8c510a', '#d8b365', '#f6e8c3', '#c7eae5', '#5ab4ac', '#01665e'];
-        var breaks = [0, 10, 30, 50, 100, 1000];
+				// Add lists for choropleth
+        var vioColors = ['#FFEDA0',  '#FEB24C',  '#FC4E2A', '#BD0026', '#800026'];
+        var vioBreaks = [5, 15, 35, 65, 128];
 
         // Set bounds
         var bounds = [
@@ -59,14 +98,17 @@
         }
         map.on('style.load', function() {
             mapReset();
+						// Add NJ boundary source
             map.addSource("NJ", {
                 type: "geojson",
                 data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/web/web-display/data/NJ_boundary.geojson'
                 });
+						// Add PWS, violation and demographic data source
             map.addSource('aw', {
                 type: 'geojson',
                 data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/web/web-display/data/pws_aw.geojson'
                 });
+						// Add NJ boundary layer
             map.addLayer({
                'id': 'new_jersey',
                'type': 'line',
@@ -76,6 +118,7 @@
                    'line-color': '#070705'
                 }
             });
+						// Add PWS, violation and demographic data layer
             map.addLayer({
                 'id': 'aw_pws',
                 'type': 'fill',
@@ -84,12 +127,15 @@
                      'fill-color': {
                        'property': 'all_violations',
                        'stops': [
-                         [breaks[0], colors[0]],
-                         [breaks[1], colors[1]],
-                         [breaks[2], colors[2]],
+                         [vioBreaks[0], vioColors[0]],
+                         [vioBreaks[1], vioColors[1]],
+                         [vioBreaks[2], vioColors[2]],
+												 [vioBreaks[3], vioColors[3]],
+                         [vioBreaks[4], vioColors[4]],
                        ]
                        },
-                      'fill-opacity': 0.7
+                      'fill-opacity': 0.9,
+											'fill-outline-color': '#070705'
                   }
               });
         });
