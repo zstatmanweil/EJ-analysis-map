@@ -7,21 +7,24 @@
     </head>
 
     <body>
-		<h1>Safe Drinking Water Act (SDWA) Compliance in New Jersey (2012-2016)</h1>
-		<div id='map' style='width: 100%; height: 400px;'></div>
+      <h1>Safe Drinking Water Act (SDWA) Compliance in New Jersey (2012-2016)</h1>
+      <div id='map' style='width: 100%; height: 400px;'></div>
     <div id='menu'>
         <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
         <label for='streets'>streets</label>
         <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
         <label for='satellite'>satellite</label>
-		</div>
+      </div>
 
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.min.js'></script>
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.css' type='text/css' />
     <div id='map'></div>
 
         <script>
-				mapboxgl.accessToken = 'pk.eyJ1IjoienN0YXRtYW53ZWlsIiwiYSI6ImNqbWY3b3V2cjAyMWUzcXBmNXRzdHNnOWEifQ.E-JUGH3ab30ya_NXealg_A';
+        mapboxgl.accessToken = 'pk.eyJ1IjoienN0YXRtYW53ZWlsIiwiYSI6ImNqbWY3b3V2cjAyMWUzcXBmNXRzdHNnOWEifQ.E-JUGH3ab30ya_NXealg_A';
+
+        var colors = ['#8c510a', '#d8b365', '#f6e8c3', '#c7eae5', '#5ab4ac', '#01665e'];
+        var breaks = [0, 10, 30, 50, 100, 1000];
 
         // Set bounds
         var bounds = [
@@ -39,7 +42,6 @@
         // Toggle between styles
         var layerList = document.getElementById('menu');
         var inputs = layerList.getElementsByTagName('input');
-
         function switchLayer(layer) {
             var layerId = layer.target.id;
             map.setStyle('mapbox://styles/mapbox/' + layerId);
@@ -54,16 +56,17 @@
         // Add navigation control
         map.addControl(new mapboxgl.NavigationControl());
         function mapReset() {
-
         }
-
         map.on('style.load', function() {
             mapReset();
             map.addSource("NJ", {
                 type: "geojson",
                 data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/web/web-display/data/NJ_boundary.geojson'
                 });
-
+            map.addSource('aw', {
+                type: 'geojson',
+                data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/web/web-display/data/pws_aw.geojson'
+                });
             map.addLayer({
                'id': 'new_jersey',
                'type': 'line',
@@ -72,7 +75,23 @@
                'paint': {
                    'line-color': '#070705'
                 }
-           });
+            });
+            map.addLayer({
+                'id': 'aw_pws',
+                'type': 'fill',
+                'source': 'aw',
+                'paint': {
+                     'fill-color': {
+                       'property': 'all_violations',
+                       'stops': [
+                         [breaks[0], colors[0]],
+                         [breaks[1], colors[1]],
+                         [breaks[2], colors[2]],
+                       ]
+                       },
+                      'fill-opacity': 0.7
+                  }
+              });
         });
         </script>
 	</body>
