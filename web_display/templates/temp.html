@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Spatial environmental justice analysis</title>
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    </head>
+
+    <body>
+        <h1>Safe Drinking Water Act (SDWA) Compliance in New Jersey (2012-2016)</h1>
+        <div id='map' style='width: 100%; height: 400px;'></div>
+    <div id='menu'>
+        <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
+        <label for='streets'>streets</label>
+        <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
+        <label for='satellite'>satellite</label>
+    </div>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.css' type='text/css' />
+    <div id='map'></div>
+
+        <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoienN0YXRtYW53ZWlsIiwiYSI6ImNqbWY3b3V2cjAyMWUzcXBmNXRzdHNnOWEifQ.E-JUGH3ab30ya_NXealg_A';
+           //globals for the choropleth
+          // var COLORS = ['#8c510a', '#d8b365', '#f6e8c3', '#c7eae5', '#5ab4ac', '#01665e'],
+          //     BREAKS = [0, 10, 30, 50, 100, 1000],
+          //     FILTERUSE;
+
+          // Set bounds
+          var bounds = [
+              [-125.339515, 23.089636], // Southwest Coordinates
+              [-62.346295, 50.046593] // Norteast Coordinates
+              ];
+          // Initialize map
+          var map = new mapboxgl.Map({
+  	        container: 'map',
+              style: 'mapbox://styles/mapbox/streets-v11',
+  	   	    center: [-74.385210, 40.118365], // long, lat
+              zoom: 6.3,
+          //    maxBounds: bounds // Sets bounds as max
+          });
+          // Toggle between styles
+          var layerList = document.getElementById('menu');
+          var inputs = layerList.getElementsByTagName('input');
+
+          function switchLayer(layer) {
+              var layerId = layer.target.id;
+              map.setStyle('mapbox://styles/mapbox/' + layerId);
+          }
+          for (var i = 0; i < inputs.length; i++) {
+              inputs[i].onclick = switchLayer;
+          }
+          // Add Geocoder
+          map.addControl(new MapboxGeocoder({
+              accessToken: mapboxgl.accessToken
+          }));
+          // Add navigation control
+          map.addControl(new mapboxgl.NavigationControl());
+          function mapReset() {
+
+          }
+
+          map.on('style.load', function() {
+              mapReset();
+              // Add New Jersey boundary GeoJSON
+              map.addSource("NJ", {
+                  type: "geojson",
+                  data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/web/web-display/data/NJ_boundary.geojson'
+                  });
+              // Add GeoJSON containing PWS boundaries, violations, and population demographics (areal weighting)
+              // map.addSource('aw', {
+              //     type: 'geojson',
+              //     data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/web/web-display/data/pws_aw.geojson'
+              //     });
+              // Add New Jersey boundary layer
+              map.addLayer({
+                  id: 'new_jersey',
+                  type: 'line',
+                  source: 'NJ',
+                  layout: {},
+                  paint: {
+                     line-color: '#070705'
+                  }
+              });
+              // Add PWS/violation/demographic (areal weighting) layer
+              // map.addLayer({
+              //     id: 'aw_pws',
+              //     source: 'aw'
+              //     type: 'fill'
+              //     paint: {
+              //         fill-color: {
+              //         property: 'all_violations',
+              //         stops: [
+              //         [BREAKS[0], COLORS[0]],
+              //         [BREAKS[1], COLORS[1]],
+              //         [BREAKS[2], COLORS[2]],
+              //         [BREAKS[3], COLORS[3]],
+              //         [BREAKS[4], COLORS[4]],
+              //         [BREAKS[5], COLORS[5]]]
+              //         },
+              //       fill-opacity: 0.7
+              //       fill-outline-color: '#ffffff'}
+              //     }
+          });
+          </script>
+	</body>
+</html>
