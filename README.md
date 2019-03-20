@@ -11,18 +11,19 @@ I am conducting the same type of spatial environmental justice analysis I did fo
 ## Tasks
 
 - [x] Access Census data through the Census APIs, and use Jypter Notebooks to explore the demographic data by tract, specifically percent below the poverty line and percent people of color. 
-  - [`EJ-analysis-map/Census/Census-data-prep.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/tree/master/Census-data-prep/Census.ipynb)
+  - [`EJ-analysis-map/Census/census-data-prep.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/tree/master/census_data_prep/census.ipynb)
 - [x] Access the SDWA violation data through the [Envirofacts REST API](https://www.epa.gov/enviro/other-service-enabled-data), and use Jupyter Notebooks to explore and organize the data. 
-  - [`EJ-analysis-map/SDWA-data-prep/SDWIS.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/tree/master/SDWA-data-prep/SDWISData.ipynb)
+  - [`EJ-analysis-map/SDWA-data-prep/sdwis_data.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/tree/master/SDWA_data_prep/sdwis_data.ipynb)
 - [ ] Make the process of accessing and organizing the public water system data reproducible through a chain of Python scripts.
 - [x] Etimate the population and the public water systems' sociodemographic characteristics within each water system through **areal weighting**. Create maps to visualize the results.
-  - [`EJ-analysis-map/spatial-analysis/ArealWeighting.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/spatial-analysis/ArealWeighting.ipynb)
+  - [`EJ-analysis-map/spatial-analysis/areal_weighting.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/spatial_analysis/areal_weighting.ipynb)
 - [ ] Etimate the population and the public water systems' sociodemographic characteristics within each water system through **dasymetric mapping**. Create maps to visualize the results.
-  - [`EJ-analysis-map/spatial-analyss/Dasymetric.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/spatial-analysis/Dasymetric.ipynb)
+  -*In progress:* [`EJ-analysis-map/spatial-analyss/dasymetric.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/spatial_analysis/dasymetric.ipynb)
 - [ ] Make the areal weighting and dasymetric processes reproducible through a chain of Python scripts.
 - [ ] Conduct a statistical analysis of the results to determine the correlation, if any, between the EJ variables and the SDWA violations. The negative binomial regression code I created for the Pennsylvania data can be found here: 
   - [`NegBinomialModel`](https://github.com/zstatmanweil/NegBinomialModel) 
 - [ ] Get the map  and statistical results on the web!
+  - *In progress:* [`web_app`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/web_app)
 
 
 
