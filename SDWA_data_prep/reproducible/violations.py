@@ -34,7 +34,7 @@ class StateViolations:
             self.vio_by_pws = pd.pivot_table(pivot,
                                             index=['PWSID'],
                                             aggfunc='count')
-            self.vio_by_pws = self.vio_by_pws.reset_index().drop(columns='health_based')
+            self.vio_by_pws = self.vio_by_pws.reset_index().drop(columns=['PWSNAME', 'health_based'])
             self.vio_by_pws = self.vio_by_pws.rename(columns={'VIOID': 'all_violations'})
         return self.vio_by_pws
         
@@ -46,7 +46,7 @@ class StateViolations:
             self.health_vio_by_pws = pd.pivot_table(health_pivot,
                                                     index=['PWSID'],
                                                     aggfunc='count')
-            self.health_vio_by_pws = self.health_vio_by_pws.reset_index()
+            self.health_vio_by_pws = self.health_vio_by_pws.reset_index().drop(columns='PWSNAME')
             self.health_vio_by_pws = self.health_vio_by_pws.rename(
                                                     columns={'VIOID': 'health_violations'})
         return self.health_vio_by_pws
@@ -57,9 +57,9 @@ class StateViolations:
        
         # Merge tables into one dataset
         sdwa_vios = pd.merge(self.get_total_vio_sum_table(), 
-                             self.get_health_vio_sum_table().drop(columns='PWSNAME'), 
+                             self.get_health_vio_sum_table(), 
                              how='outer', 
-                             on='PWSID')
+                             on=['PWSID'])
 
         # Convert null values to 0
         sdwa_vios.fillna(0, inplace=True)
@@ -81,10 +81,11 @@ class StateViolations:
 
         # Only utilize necessary columns
         pws_clean = self.pws_df.filter(['PWSID',
-                                   'PRIMARY_SOURCE_CODE',
-                                   'OWNER_TYPE_CODE', 
-                                   'SERVICE_CONNECTIONS_COUNT',
-                                   'COUNTIES_SERVED'], axis=1)
+                                        'PWS_NAME',
+                                        'PRIMARY_SOURCE_CODE',
+                                        'OWNER_TYPE_CODE', 
+                                        'SERVICE_CONNECTIONS_COUNT',
+                                        'COUNTIES_SERVED'], axis=1)
     
         # Merge with the violation data
         sdwa_vios_merged = pd.merge(pws_clean, 
@@ -100,6 +101,10 @@ class StateViolations:
         # isn't violation data  for a water system that means the water system did not 
         # recieve a violation.
         sdwa_vios_merged.fillna(0, inplace=True)
+        
+        # Convert violation field type to int64 
+        sdwa_vios_merged['health_violations'] = sdwa_vios_merged['health_violations'].astype('int64')
+        sdwa_vios_merged['all_violations'] = sdwa_vios_merged['all_violations'].astype('int64')
         
         return sdwa_vios_merged
     

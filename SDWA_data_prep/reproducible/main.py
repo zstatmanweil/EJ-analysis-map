@@ -15,16 +15,17 @@ print(vio_df.head())
 pws_df = data.get_pws_data_df(state)
 print(pws_df.head())
 
+# Create a violation class for this state of interest
 vio = StateViolations(state, vio_df, pws_df)
 
-# Print summary tables of total and health-based violations
-print(vio.get_total_vio_sum_table().head())
-print(vio.get_health_vio_sum_table().head())
-print(vio.get_vio_sum_table().head())
+# Print summary tables of PWS characteristics total and health-based violations
+#print(vio.get_total_vio_sum_table().head())
+#print(vio.get_health_vio_sum_table().head())
+#print(vio.get_vio_sum_table().head())
 print(vio.get_pws_vio_sum_table().head())
 
-#Print name and ID of specific PWS
-PWS1 = PWS(state, vio_df, pws_df, ID='NJ0102001')
+# Get information about specific water system
+PWS1 = PWS(vio, ID='NJ0102001')
 print(PWS1.display_name())
 print(PWS1.get_vio_total())
 print(PWS1.get_health_vio_total())
