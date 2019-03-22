@@ -47,9 +47,6 @@ def get_pws_data_df(state):
     
     # Clean headers and remove last "unnamed" column
     pws_df = clean_headers(pws_df, 'WATER_SYSTEM.').drop(labels='Unnamed: 47', axis=1)
-   
-    # Remove any water systems that don't start with state ID
-    pws_df = remove_other_state_pws(pws_df, state)
     
     return pws_df
 
