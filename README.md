@@ -26,7 +26,8 @@ To run the notebook, run the following command in your Terminal:
   - [`census_data_prep/census.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/tree/master/census_data_prep/census.ipynb)
 - [x] Access the SDWA violation data through the [Envirofacts REST API](https://www.epa.gov/enviro/other-service-enabled-data), and use Jupyter Notebooks to explore and organize the data. 
   - [`SDWA_data_prep/sdwis_data.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/tree/master/SDWA_data_prep/sdwis_data.ipynb)
-- [ ] Make the process of accessing and organizing the public water system data reproducible through a chain of Python scripts.
+- [x] Make a data pipeline for accessing and organizing the public water system data.
+  -[`SDWA_data_prep`](https:github.com/zstatmanweil/EJ-analysis-map/tree/master/SDWA_data_prep)
 - [x] Etimate the population and the public water systems' sociodemographic characteristics within each water system through **areal weighting**. Create maps to visualize the results.
   - [`spatial_analysis/areal_weighting.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/spatial_analysis/areal_weighting.ipynb)
 - [ ] Etimate the population and the public water systems' sociodemographic characteristics within each water system through **dasymetric mapping**. Create maps to visualize the results.
