@@ -1,6 +1,6 @@
 ## Introduction
 
-I am conducting the same type of spatial environmental justice analysis I did for my thesis on disparities in compliance with the Safe Drinking Water Act (SDWA), but this time entirely in Python rather than with desktop geospatial software (e.g., ArcGIS). Additionally, my thesis focused on Pennsylvania, but this project will focus on New Jersey so I can compare my results.  This project will give me the opportunity to use geospatial Python libraries (e.g., geopandas, rasterio), build a small web application, and create a beautiful and useful web map where the user can explore drinking water quality and environmental justice concerns.
+I am conducting the same type of spatial environmental justice analysis I did for my thesis on disparities in compliance with the Safe Drinking Water Act (SDWA), but this time entirely in Python rather than with desktop geospatial software (e.g., ArcGIS). Additionally, my thesis focused on Pennsylvania, but this project will focus on New Jersey so I can compare my results.  This project will give me the opportunity to use **geospatial Python libraries** (e.g., geopandas, rasterio), build a small **web application**, and create a beautiful and useful **web map** where the user can explore drinking water quality and environmental justice concerns.
 
 ## Research Questions
 
@@ -14,7 +14,7 @@ I am conducting the same type of spatial environmental justice analysis I did fo
   - [`census_data_prep/census.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/tree/master/census_data_prep/census.ipynb)
 - [x] Access the SDWA violation data through the [Envirofacts REST API](https://www.epa.gov/enviro/other-service-enabled-data), and use Jupyter Notebooks to explore and organize the data. 
   - [`SDWA_data_prep/sdwis_data.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/tree/master/SDWA_data_prep/sdwis_data.ipynb)
-- [x] Make a data pipeline for accessing and organizing the public water system data from the Envirofacts REST API so the analysis is reproducible in other states.
+- [x] Make an ad hoc data pipeline for accessing and organizing the public water system data from the Envirofacts REST API so the analysis is reproducible in other states.
   - [`SDWA_data_prep`](https:github.com/zstatmanweil/EJ-analysis-map/tree/master/SDWA_data_prep)
 - [x] Etimate the population and the public water systems' sociodemographic characteristics within each water system through **areal weighting**. Create maps to visualize the results.
   - [`spatial_analysis/areal_weighting.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/spatial_analysis/areal_weighting.ipynb)
