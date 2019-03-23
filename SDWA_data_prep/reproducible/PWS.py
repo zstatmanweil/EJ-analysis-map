@@ -2,6 +2,8 @@
 
 class PWS:
     
+    """PWS instances represent information about a specific water system"""
+    
     def __init__(self, state_violation_class, ID):
         self.vio_sum = state_violation_class.get_pws_vio_sum_table()
         self.ID = ID
