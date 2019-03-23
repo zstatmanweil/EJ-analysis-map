@@ -8,19 +8,7 @@ I am conducting the same type of spatial environmental justice analysis I did fo
 
 2) How do the results differ depending on the spatial analysis method used to estimate the demographic characteristics of the population served by the CWS? 
 
-## Notes
-
-A lot of my data analysis has been completed in Jupyter Notebooks, which is usually easily viewable on GitHub but sometimes does not load properly. If not loading, the notebooks can be viewed by cloning the repository and viewing in Jupyter Notebooks.  Jupyter Notebooks can be installed as follows if you have Python 3 installed:
-
-`python3 -m pip install --upgrade pip` 
-
-`python3 -m pip install jupyter`
-
-To run the notebook, run the following command in your Terminal:
-
-`jupyter notebook`
-
-## Tasks
+## Project Steps
 
 - [x] Access Census data through the Census APIs, and use Jypter Notebooks to explore the demographic data by tract, specifically percent below the poverty line and percent people of color. 
   - [`census_data_prep/census.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/tree/master/census_data_prep/census.ipynb)
@@ -39,6 +27,17 @@ To run the notebook, run the following command in your Terminal:
   - *In progress:* [`web_app`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/web_app)
 
 
+## Notes
+
+A lot of my data analysis has been completed in Jupyter Notebooks, which is usually easily viewable on GitHub but sometimes does not load properly. If not loading, the notebooks can be viewed by cloning the repository and viewing in Jupyter Notebooks.  Jupyter Notebooks can be installed as follows if you have Python 3 installed:
+
+`python3 -m pip install --upgrade pip` 
+
+`python3 -m pip install jupyter`
+
+To run the notebook, run the following command in your Terminal:
+
+`jupyter notebook`
 
 
 
