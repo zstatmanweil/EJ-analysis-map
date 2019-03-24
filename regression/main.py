@@ -1,24 +1,24 @@
 import pandas as pd
+import geopandas as gpd
 from variables import Variables
-from model import NegiBinModel
-from summarystats import SummaryStats
+from model import NegBinModel
+from summary_stats import SummaryStats
 import os
 import matplotlib.pyplot as plt
 
-os.chdir('./data')
+os.chdir('../data/Created/SpatialAnalysis')
 
-# Select the data set
-#data = 'Dasymetric_Data.csv'
-#data = 'ArealWeighting_Data.csv'
-#data = 'Interpolation_data.csv'
-data = 'County_Data.csv'
+# Select the dataset
+#data = 'AW_vios.geojson'
+data = 'county_vios.geojson'
 
-# Read relevant csv  
-df = pd.read_csv(data)
+# Read relevant file and confert to pandas DataFrame
+gpddf = gpd.read_file(data).drop(columns='geometry')
+df = pd.DataFrame(gpddf)
 
 # Select violation data of interest
-#vio_data = "All_Violations"
-vio_data = "Violations_Yes_HealthBased"
+vio_data = "all_violations"
+#vio_data = "health_violations"
 
 # Add dummy variables
 new_df = Variables(df)
@@ -27,7 +27,7 @@ complete_df = new_df.df
 
 # Analyze data with negative binomial regression model (results will be table)
 print("Results of Negative Binomial Regression Model:")
-model = Neg_Bin_Model(complete_df, vio_data, data)
+model = NegBinModel(complete_df, vio_data, data)
 model.summarize()
 print("\npearson chi2:", model.get_pearson())
 #model.get_mle_retvals()
@@ -37,9 +37,9 @@ model.get_predictions()
 
 # Get summary stats
 print("\nSummary stats for the continuous and categorical variables")
-continuous_columns = ("Percent_Below_Poverty_Line", "Percent_Minority")
-cat_columns = ("Rural", "Public","ConnectionsLess200", "GroundwaterOrCombined")
-summary = Summary_Stats(complete_df, continuous_columns, cat_columns)
+continuous_columns = ('perc_pov', 'perc_POC')
+cat_columns = ("urban", "public","connections_less_200", "gw_or_combined")
+summary = SummaryStats(complete_df, continuous_columns, cat_columns)
 print("Continuous variables:\n", summary.cont_summary_table(), "\n")
 print("Categorical variables:\n", summary.count_table())
 
@@ -51,11 +51,11 @@ model.get_residuals()
 # Explore residuals
 print("\nPredictions and residuals:")
 pd.set_option('max_columns', 7)
-print (model.df[["Predictions","Std_Pearson_Residuals","Std_Deviance_Residuals", "Residuals"]].head(5))
+print (model.df[["predictions","std_pearson_residuals","std_deviance_residuals", "residuals"]].head(5))
 
 #create plot of residuals
 # =============================================================================
-# plt.scatter(model.df["Predictions"], model.df["Std_Deviance_Residuals"], s=5, color="black")
+# plt.scatter(model.df["predictions"], model.df["std_deviance_residuals"], s=5, color="black")
 # plt.xlabel("Predicted Value of Mean Response")
 # plt.ylabel("Standardized Deviance Residuals")
 # #plt.xlim([0,5])
@@ -63,4 +63,4 @@ print (model.df[["Predictions","Std_Pearson_Residuals","Std_Deviance_Residuals",
 # =============================================================================
 
 # Export DataFrame to csv
-model.df.to_csv("../export/" + data[0:-9] + "_" + vio_data + ".csv")
+#model.df.to_csv("../export/" + data[0:-9] + "_" + vio_data + ".csv")

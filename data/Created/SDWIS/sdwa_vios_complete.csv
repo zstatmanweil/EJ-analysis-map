@@ -1,495 +1,503 @@
 PWSID,PRIMARY_SOURCE_CODE,OWNER_TYPE_CODE,SERVICE_CONNECTIONS_COUNT,COUNTIES_SERVED,all_violations,health_violations,primary_source,owner_type
-NJ1432001,GW,L,10,Morris,1,0,Ground water,Local Government
-NJ1435002,GW,L,4350,Morris,1,0,Ground water,Local Government
-NJ1503001,GW,L,2253,Ocean,1,0,Ground water,Local Government
-NJ1522001,GW,L,933,Ocean,12,0,Ground water,Local Government
-NJ1005001,GW,L,4600,Hunterdon,1,0,Ground water,Local Government
-NJ1712001,GW,L,2309,Salem,1,0,Ground water,Local Government
-NJ1713001,GW,P,46,Salem,2,0,Ground water,Private
-NJ1511016,GW,P,30,Ocean,2,0,Ground water,Private
-NJ0506015,GW,P,101,Cape May,6,0,Ground water,Private
-NJ1509001,GW,L,1178,Ocean,2,1,Ground water,Local Government
+NJ1432001,GW,L,10,Morris,30,0,Ground water,Local Government
+NJ1435002,GW,L,4350,Morris,5,0,Ground water,Local Government
+NJ1503001,GW,L,2253,Ocean,1,1,Ground water,Local Government
+NJ1522001,GW,L,933,Ocean,1,0,Ground water,Local Government
+NJ1005001,GW,L,4600,Hunterdon,4,0,Ground water,Local Government
+NJ1712001,GW,L,2309,Salem,9,0,Ground water,Local Government
+NJ1713001,GW,P,46,Salem,0,0,Ground water,Private
+NJ1511016,GW,P,30,Ocean,1,0,Ground water,Private
+NJ0506015,GW,P,101,Cape May,0,0,Ground water,Private
+NJ1509001,GW,L,1178,Ocean,0,0,Ground water,Local Government
 NJ1526001,GW,L,1681,Ocean,1,0,Ground water,Local Government
-NJ1019003,GW,P,37,Hunterdon,16,0,Ground water,Private
-NJ1815300,GW,P,8,Somerset,1,1,Ground water,Private
-NJ1518003,GW,P,826,Ocean,1,0,Ground water,Private
-NJ1340001,SWP,L,4078,Monmouth,1,1,Surface water purchased,Local Government
-NJ1302001,GW,L,662,Monmouth,3,2,Ground water,Local Government
-NJ0108005,GW,P,89,Atlantic,19,1,Ground water,Private
+NJ1019003,GW,P,37,Hunterdon,0,0,Ground water,Private
+NJ1815300,GW,P,8,Somerset,1,0,Ground water,Private
+NJ1518003,GW,P,826,Ocean,0,0,Ground water,Private
+NJ1340001,SWP,L,4078,Monmouth,20,1,Surface water purchased,Local Government
+NJ1302001,GW,L,662,Monmouth,0,0,Ground water,Local Government
+NJ0108005,GW,P,89,Atlantic,0,0,Ground water,Private
 NJ0108303,GW,P,57,Atlantic,1,0,Ground water,Private
-NJ1902009,GW,P,1,Sussex,14,0,Ground water,Private
-NJ0610002,GW,P,90,Cumberland,1,0,Ground water,Private
-NJ1520001,GW,L,5507,Ocean,9,9,Ground water,Local Government
-NJ1517006,GWP,L,318,Ocean,4,2,Groundwater purchased,Local Government
+NJ1902009,GW,P,1,Sussex,0,0,Ground water,Private
+NJ0610002,GW,P,90,Cumberland,0,0,Ground water,Private
+NJ1520001,GW,L,5507,Ocean,2,0,Ground water,Local Government
+NJ1517006,GWP,L,318,Ocean,2,0,Groundwater purchased,Local Government
 NJ1517002,GW,L,682,Ocean,1,0,Ground water,Local Government
-NJ1517004,GWP,L,426,Ocean,4,0,Groundwater purchased,Local Government
-NJ1517005,GWP,L,400,Ocean,4,3,Groundwater purchased,Local Government
-NJ1517001,GW,L,5821,Ocean,1,1,Ground water,Local Government
-NJ1330002,SWP,L,2461,Monmouth,1,0,Surface water purchased,Local Government
-NJ1330003,SWP,L,427,Monmouth,1,0,Surface water purchased,Local Government
-NJ1924006,GW,P,16,Sussex,4,0,Ground water,Private
-NJ0307002,GW,S,2,Burlington,3,0,Ground water,State Government
+NJ1517004,GWP,L,426,Ocean,1,0,Groundwater purchased,Local Government
+NJ1517005,GWP,L,400,Ocean,0,0,Groundwater purchased,Local Government
+NJ1517001,GW,L,5821,Ocean,0,0,Ground water,Local Government
+NJ1330002,SWP,L,2461,Monmouth,13,3,Surface water purchased,Local Government
+NJ1330003,SWP,L,427,Monmouth,8,1,Surface water purchased,Local Government
+NJ1924006,GW,P,16,Sussex,0,0,Ground water,Private
+NJ0307002,GW,S,2,Burlington,5,0,Ground water,State Government
 NJ0704001,SWP,L,4082,Essex,1,0,Surface water purchased,Local Government
-NJ1314001,GW,L,400,Monmouth,1,0,Ground water,Local Government
-NJ1912300,GW,P,3,Sussex,2,0,Ground water,Private
-NJ1511005,GW,P,258,Ocean,3,0,Ground water,Private
-NJ1921001,SW,L,770,Sussex,6,0,Surface water,Local Government
-NJ0333001,GW,P,2444,Burlington,1,0,Ground water,Private
-NJ0322001,SWP,L,7298,Burlington,1,0,Surface water purchased,Local Government
-NJ0221001,SWP,L,6471,Bergen,1,0,Surface water purchased,Local Government
-NJ0501001,GW,L,5401,Cape May,1,1,Ground water,Local Government
+NJ1314001,GW,L,400,Monmouth,0,0,Ground water,Local Government
+NJ1912300,GW,P,3,Sussex,1,0,Ground water,Private
+NJ1511005,GW,P,258,Ocean,0,0,Ground water,Private
+NJ1921001,SW,L,770,Sussex,11,6,Surface water,Local Government
+NJ0333001,GW,P,2444,Burlington,2,0,Ground water,Private
+NJ0322001,SWP,L,7298,Burlington,20,0,Surface water purchased,Local Government
+NJ0221001,SWP,L,6471,Bergen,1,1,Surface water purchased,Local Government
+NJ0501001,GW,L,5401,Cape May,0,0,Ground water,Local Government
 NJ0340002,GW,P,40,Burlington,1,0,Ground water,Private
-NJ0326013,GW,P,40,Burlington,1,1,Ground water,Private
-NJ0610001,GW,L,7632,Cumberland,2,0,Ground water,Local Government
-NJ0410002,GW,P,1,Camden,1,0,Ground water,Private
-NJ0414001,GW,L,4115,Camden,2,0,Ground water,Local Government
+NJ0326013,GW,P,40,Burlington,0,0,Ground water,Private
+NJ0610001,GW,L,7632,Cumberland,14,0,Ground water,Local Government
+NJ0410002,GW,P,1,Camden,0,0,Ground water,Private
+NJ0414001,GW,L,4115,Camden,17,0,Ground water,Local Government
 NJ0436001,SWP,S,50,Camden,1,0,Surface water purchased,State Government
-NJ1525001,SWP,L,2950,Ocean,1,0,Surface water purchased,Local Government
-NJ1214001,SW,L,8500,Middlesex,2,0,Surface water,Local Government
-NJ1434001,GW,L,2975,Morris,1,0,Ground water,Local Government
+NJ1525001,SWP,L,2950,Ocean,0,0,Surface water purchased,Local Government
+NJ1214001,SW,L,8500,Middlesex,3,0,Surface water,Local Government
+NJ1434001,GW,L,2975,Morris,2,1,Ground water,Local Government
 NJ0815001,SWP,L,3542,Gloucester,2,0,Surface water purchased,Local Government
-NJ1523003,GW,P,459,Ocean,3,0,Ground water,Private
+NJ1523003,GW,P,459,Ocean,0,0,Ground water,Private
 NJ1523002,GW,P,244,Ocean,1,0,Ground water,Private
-NJ1309415,GW,P,1,Monmouth,1,0,Ground water,Private
-NJ0706002,SWP,L,1,Essex,1,1,Surface water purchased,Local Government
-NJ0706001,SWP,L,758,Essex,18,0,Surface water purchased,Local Government
-NJ0707001,SWP,L,2025,Essex,1,0,Surface water purchased,Local Government
-NJ0242001,GW,L,4800,Bergen,1,0,Ground water,Local Government
+NJ1309415,GW,P,1,Monmouth,2,2,Ground water,Private
+NJ0706002,SWP,L,1,Essex,0,0,Surface water purchased,Local Government
+NJ0706001,SWP,L,758,Essex,0,0,Surface water purchased,Local Government
+NJ0707001,SWP,L,2025,Essex,0,0,Surface water purchased,Local Government
+NJ0242001,GW,L,4800,Bergen,0,0,Ground water,Local Government
 NJ1223001,SWP,L,4245,Middlesex,2,0,Surface water purchased,Local Government
-PA6430001,GW,P,23,Mercer,6,0,Ground water,Private
-NJ1905002,GW,P,15,Sussex,2,0,Ground water,Private
-NJ1204001,SWP,L,15400,Middlesex,5,0,Surface water purchased,Local Government
-NJ2113002,GW,P,36,Warren,2,1,Ground water,Private
-NJ1902005,GW,P,48,Sussex,1,0,Ground water,Private
-NJ1521001,GW,L,1141,Ocean,1,0,Ground water,Local Government
-NJ1111001,SW,L,62337,Mercer,1,1,Surface water,Local Government
-NJ1341001,GW,L,302,Monmouth,6,0,Ground water,Local Government
-NJ1511007,GW,P,55,Ocean,2,1,Ground water,Private
-NJ0803001,SWP,L,3650,Gloucester,1,0,Surface water purchased,Local Government
-NJ1708001,GW,L,4813,Salem,23,4,Ground water,Local Government
-NJ1904001,GW,P,410,Sussex,1,0,Ground water,Private
-NJ1007002,GW,P,74,Hunterdon,2,1,Ground water,Private
-NJ1601001,SWP,L,2550,Passaic,13,0,Surface water purchased,Local Government
-NJ1605001,SWP,P,4546,Passaic,1,0,Surface water purchased,Private
-NJ1431001,SWP,L,4608,Morris,6,0,Surface water purchased,Local Government
-NJ0801001,GW,L,2748,Gloucester,19,0,Ground water,Local Government
+PA6430001,GW,P,23,Mercer,35,0,Ground water,Private
+NJ1905002,GW,P,15,Sussex,1,0,Ground water,Private
+NJ1204001,SWP,L,15400,Middlesex,3,0,Surface water purchased,Local Government
+NJ2113002,GW,P,36,Warren,1,1,Ground water,Private
+NJ1902005,GW,P,48,Sussex,2,0,Ground water,Private
+NJ1708001,GW,L,4813,Salem,65,1,Ground water,Local Government
 NJ2116004,GW,L,1,Warren,2,0,Ground water,Local Government
-NJ0265001,SWP,L,2400,Bergen,3,0,Surface water purchased,Local Government
-LA1019085,GW,P,50,Calcasieu Parish,2,0,Ground water,Private
-NJ1331001,GW,F,138,Monmouth,1,1,Ground water,Federal Government
-NJ2112002,GW,L,100,Warren,2,0,Ground water,Local Government
-NJ2112001,GW,L,28,Warren,2,0,Ground water,Local Government
-NY3700921,GW,P,148,Oswego,2,0,Ground water,Private
-NJ0717001,SWP,L,4597,Essex,1,0,Surface water purchased,Local Government
-NJ0238001,SW,P,193600,"Bergen,Hudson",2,0,Surface water,Private
-NJ0220001,SWP,P,1948,Bergen,1,1,Surface water purchased,Private
-NJ0236001,SWP,P,216,Bergen,3,0,Surface water purchased,Private
-NJ1511003,GW,P,81,Ocean,1,1,Ground water,Private
-NJ1508001,GW,P,53,Ocean,2,0,Ground water,Private
-NJ1339001,SWP,P,10721,Monmouth,4,4,Surface water purchased,Private
-NJ1513001,GW,L,850,Ocean,2,1,Ground water,Local Government
-NJ0718001,SWP,L,2053,Essex,33,2,Surface water purchased,Local Government
+NJ0265001,SWP,L,2400,Bergen,0,0,Surface water purchased,Local Government
+LA1019085,GW,P,50,Calcasieu Parish,1,0,Ground water,Private
+NJ1331001,GW,F,138,Monmouth,2,0,Ground water,Federal Government
+NJ2112002,GW,L,100,Warren,0,0,Ground water,Local Government
+NJ2112001,GW,L,28,Warren,0,0,Ground water,Local Government
+NY3700921,GW,P,148,Oswego,0,0,Ground water,Private
+NJ1521001,GW,L,1141,Ocean,0,0,Ground water,Local Government
+NJ1111001,SW,L,62337,Mercer,2,1,Surface water,Local Government
+NJ1341001,GW,L,302,Monmouth,5,0,Ground water,Local Government
+NJ1511007,GW,P,55,Ocean,0,0,Ground water,Private
+NJ0803001,SWP,L,3650,Gloucester,1,1,Surface water purchased,Local Government
+NJ0718001,SWP,L,2053,Essex,4,0,Surface water purchased,Local Government
 NJ1515001,GW,L,2193,Ocean,1,0,Ground water,Local Government
-NJ1710304,GW,P,1,Salem,1,1,Ground water,Private
-NJ2117003,GW,P,32,Warren,1,1,Ground water,Private
-NJ1922021,GW,P,15,Sussex,1,0,Ground water,Private
-NJ2013001,SW,L,8300,Union,2,0,Surface water,Local Government
-NJ0510001,GW,L,3000,Cape May,4,1,Ground water,Local Government
-NJ1920001,GW,L,402,Sussex,1,1,Ground water,Local Government
-NJ1704001,GW,L,31,Salem,4,0,Ground water,Local Government
-NJ1426005,GWP,P,685,Morris,2,0,Groundwater purchased,Private
-NJ1426002,GWP,L,195,Morris,2,0,Groundwater purchased,Local Government
-NJ0335001,GW,P,98,Burlington,1,0,Ground water,Private
-NJ0326008,GW,P,214,Burlington,2,0,Ground water,Private
-NJ0264001,GW,L,3569,Bergen,3,0,Ground water,Local Government
-NJ0105001,GW,P,32,Atlantic,24,0,Ground water,Private
-NJ1020001,GW,L,567,Hunterdon,1,0,Ground water,Local Government
-NJ0605001,GW,P,130,Cumberland,1,1,Ground water,Private
-NJ1922027,GW,P,96,Sussex,1,1,Ground water,Private
-NJ1422001,GW,P,17,Morris,1,0,Ground water,Private
-NJ0716001,SWP,L,8448,Essex,42,0,Surface water purchased,Local Government
-NJ1319003,GW,P,134,Monmouth,5,0,Ground water,Private
-NJ0102001,SW,L,7775,Atlantic,14,0,Surface water,Local Government
-NJ0113001,GW,L,3845,Atlantic,2,2,Ground water,Local Government
-NJ1902346,GW,P,5,Sussex,18,0,Ground water,Private
+NJ1710304,GW,P,1,Salem,17,1,Ground water,Private
+NJ1904001,GW,P,410,Sussex,1,0,Ground water,Private
+NJ1007002,GW,P,74,Hunterdon,1,0,Ground water,Private
+NJ1601001,SWP,L,2550,Passaic,1,0,Surface water purchased,Local Government
+NJ1605001,SWP,P,4546,Passaic,0,0,Surface water purchased,Private
+NJ1431001,SWP,L,4608,Morris,3,0,Surface water purchased,Local Government
+NJ0801001,GW,L,2748,Gloucester,1,0,Ground water,Local Government
+NJ0335001,GW,P,98,Burlington,0,0,Ground water,Private
+NJ0326008,GW,P,214,Burlington,0,0,Ground water,Private
+NJ0264001,GW,L,3569,Bergen,18,0,Ground water,Local Government
+NJ0717001,SWP,L,4597,Essex,0,0,Surface water purchased,Local Government
+NJ0238001,SW,P,193600,"Bergen,Hudson",24,0,Surface water,Private
+NJ0220001,SWP,P,1948,Bergen,1,0,Surface water purchased,Private
+NJ0236001,SWP,P,216,Bergen,0,0,Surface water purchased,Private
+NJ1511003,GW,P,81,Ocean,0,0,Ground water,Private
+NJ2117003,GW,P,32,Warren,5,0,Ground water,Private
+NJ1922021,GW,P,15,Sussex,0,0,Ground water,Private
+NJ2013001,SW,L,8300,Union,0,0,Surface water,Local Government
+NJ0510001,GW,L,3000,Cape May,0,0,Ground water,Local Government
+NJ1920001,GW,L,402,Sussex,58,0,Ground water,Local Government
+NJ1508001,GW,P,53,Ocean,0,0,Ground water,Private
+NJ1339001,SWP,P,10721,Monmouth,0,0,Surface water purchased,Private
+NJ1513001,GW,L,850,Ocean,1,0,Ground water,Local Government
+NJ1020001,GW,L,567,Hunterdon,2,0,Ground water,Local Government
+NJ0605001,GW,P,130,Cumberland,0,0,Ground water,Private
+NJ1922027,GW,P,96,Sussex,0,0,Ground water,Private
+NJ1422001,GW,P,17,Morris,0,0,Ground water,Private
+NJ0716001,SWP,L,8448,Essex,0,0,Surface water purchased,Local Government
+NJ1704001,GW,L,31,Salem,2,2,Ground water,Local Government
+NJ1426005,GWP,P,685,Morris,1,0,Groundwater purchased,Private
+NJ1426002,GWP,L,195,Morris,1,0,Groundwater purchased,Local Government
+NJ0113001,GW,L,3845,Atlantic,23,4,Ground water,Local Government
+NJ1902346,GW,P,5,Sussex,2,1,Ground water,Private
 NJ0804308,GW,P,1,Gloucester,1,0,Ground water,Private
-NJ1101002,GW,L,6053,Mercer,1,1,Ground water,Local Government
-NJ1328003,GW,S,8,Monmouth,1,0,Ground water,State Government
-NJ1615022,GW,P,22,Passaic,1,0,Ground water,Private
-NJ0506008,GW,L,204,Cape May,36,0,Ground water,Local Government
-NJ1706001,GW,P,63,Salem,1,1,Ground water,Private
-NJ1219001,GU,L,13500,Middlesex,4,4,Ground water under influence of surface water source,Local Government
-PA2520110,GW,P,21,Pike,1,0,Ground water,Private
-NJ2123002,GW,P,14,Warren,5,0,Ground water,Private
-NJ2123003,GW,P,206,Warren,1,0,Ground water,Private
-NJ1919001,GW,L,1420,Sussex,1,1,Ground water,Local Government
-NJ1106002,GW,L,2,Mercer,8,0,Ground water,Local Government
-NJ0228001,GW,L,1514,Bergen,1,0,Ground water,Local Government
-NJ1420001,GWP,L,1311,Morris,1,0,Groundwater purchased,Local Government
-NJ0720001,SWP,L,4181,Essex,3,0,Surface water purchased,Local Government
-NJ0601001,GW,L,7087,Cumberland,1,1,Ground water,Local Government
-NJ1613001,SW,L,13,Passaic,1,0,Surface water,Local Government
-NJ0810004,SWP,L,5221,Gloucester,38,0,Surface water purchased,Local Government
-NJ1911002,GW,P,98,Sussex,1,0,Ground water,Private
-NJ0320001,GW,L,4935,Burlington,48,0,Ground water,Local Government
+NJ1101002,GW,L,6053,Mercer,15,0,Ground water,Local Government
+PA2520110,GW,P,21,Pike,33,0,Ground water,Private
+NJ2123002,GW,P,14,Warren,1,0,Ground water,Private
+NJ2123003,GW,P,206,Warren,3,0,Ground water,Private
+NJ1919001,GW,L,1420,Sussex,20,0,Ground water,Local Government
+NJ1106002,GW,L,2,Mercer,34,0,Ground water,Local Government
+NJ0105001,GW,P,32,Atlantic,0,0,Ground water,Private
+NJ1319003,GW,P,134,Monmouth,1,0,Ground water,Private
+NJ0102001,SW,L,7775,Atlantic,6,0,Surface water,Local Government
+NJ1328003,GW,S,8,Monmouth,19,0,Ground water,State Government
+NJ1615022,GW,P,22,Passaic,0,0,Ground water,Private
+NJ0506008,GW,L,204,Cape May,1,0,Ground water,Local Government
+NJ1706001,GW,P,63,Salem,1,0,Ground water,Private
+NJ1219001,GU,L,13500,Middlesex,2,0,Ground water under influence of surface water source,Local Government
+NJ0805433,GW,P,94,Gloucester,1,0,Ground water,Private
+NJ1427002,GW,L,89,Morris,57,0,Ground water,Local Government
+NJ1427008,GW,L,203,Morris,1,0,Ground water,Local Government
+NJ1427012,GW,L,19,Morris,3,0,Ground water,Local Government
+NJ1427006,GW,L,200,Morris,17,0,Ground water,Local Government
+NJ1427007,GW,L,1202,Morris,0,0,Ground water,Local Government
+NJ1427014,GW,L,45,Morris,4,0,Ground water,Local Government
+NJ1427015,GW,L,150,Morris,5,0,Ground water,Local Government
+NJ1352003,SWP,L,10400,Monmouth,2,1,Surface water purchased,Local Government
+NJ1511002,GW,P,234,Ocean,0,0,Ground water,Private
+NJ1911002,GW,P,98,Sussex,3,0,Ground water,Private
+NJ0320001,GW,L,4935,Burlington,36,0,Ground water,Local Government
 NJ1904003,GW,P,412,Sussex,1,0,Ground water,Private
-NJ1908308,GW,P,17,Sussex,2,0,Ground water,Private
-NJ1511011,GW,P,45,Ocean,29,0,Ground water,Private
-NJ0248001,SWP,L,5551,Bergen,25,0,Surface water purchased,Local Government
-NJ0201001,SWP,L,2335,Bergen,30,0,Surface water purchased,Local Government
-NJ0258001,SWP,L,126,Bergen,27,0,Surface water purchased,Local Government
-NJ0108013,GW,P,50,Atlantic,1,1,Ground water,Private
-NJ0108014,GW,P,56,Atlantic,9,0,Ground water,Private
-NJ0108006,GW,P,128,Atlantic,36,0,Ground water,Private
+NJ1908308,GW,P,17,Sussex,2,1,Ground water,Private
+NJ0228001,GW,L,1514,Bergen,4,1,Ground water,Local Government
+NJ1420001,GWP,L,1311,Morris,3,0,Groundwater purchased,Local Government
+NJ0720001,SWP,L,4181,Essex,2,0,Surface water purchased,Local Government
+NJ0601001,GW,L,7087,Cumberland,1,0,Ground water,Local Government
+NJ1613001,SW,L,13,Passaic,6,0,Surface water,Local Government
+NJ0810004,SWP,L,5221,Gloucester,2,0,Surface water purchased,Local Government
+NJ0248001,SWP,L,5551,Bergen,1,0,Surface water purchased,Local Government
+NJ0201001,SWP,L,2335,Bergen,0,0,Surface water purchased,Local Government
+NJ0258001,SWP,L,126,Bergen,0,0,Surface water purchased,Local Government
+NJ0108013,GW,P,50,Atlantic,3,0,Ground water,Private
+NJ0108014,GW,P,56,Atlantic,1,0,Ground water,Private
+NJ0108006,GW,P,128,Atlantic,4,0,Ground water,Private
 NJ0511003,GW,P,196,Cape May,1,0,Ground water,Private
-NJ1922010,GU,P,72,Sussex,1,0,Ground water under influence of surface water source,Private
-NJ2108001,GW,L,6466,Warren,1,0,Ground water,Local Government
-NJ0805433,GW,P,94,Gloucester,3,3,Ground water,Private
-NJ1427002,GW,L,89,Morris,1,0,Ground water,Local Government
-NJ1427008,GW,L,203,Morris,1,1,Ground water,Local Government
-NJ1427012,GW,L,19,Morris,1,1,Ground water,Local Government
-NJ1427006,GW,L,200,Morris,1,0,Ground water,Local Government
-NJ1427007,GW,L,1202,Morris,1,0,Ground water,Local Government
-NJ1427014,GW,L,45,Morris,1,0,Ground water,Local Government
-NJ1427015,GW,L,150,Morris,1,0,Ground water,Local Government
-NJ1352003,SWP,L,10400,Monmouth,20,0,Surface water purchased,Local Government
-NJ1511002,GW,P,234,Ocean,11,0,Ground water,Private
-NJ0904001,SWP,L,2830,Hudson,1,1,Surface water purchased,Local Government
-NJ0436007,SWP,L,9348,Camden,2,0,Surface water purchased,Local Government
-NJ0436008,GW,L,87,Camden,1,1,Ground water,Local Government
-NJ0807001,GW,L,1873,Gloucester,1,0,Ground water,Local Government
-NJ0822001,SWP,L,927,Gloucester,2,2,Surface water purchased,Local Government
-NJ1305001,SWP,L,1000,Monmouth,3,2,Surface water purchased,Local Government
-NJ1328002,SWP,L,7910,Monmouth,1,1,Surface water purchased,Local Government
+NJ1922010,GU,P,72,Sussex,0,0,Ground water under influence of surface water source,Private
+NJ2108001,GW,L,6466,Warren,3,1,Ground water,Local Government
+NJ0904001,SWP,L,2830,Hudson,0,0,Surface water purchased,Local Government
+NJ0436007,SWP,L,9348,Camden,33,0,Surface water purchased,Local Government
+NJ0436008,GW,L,87,Camden,0,0,Ground water,Local Government
+NJ0807001,GW,L,1873,Gloucester,20,0,Ground water,Local Government
+NJ0822001,SWP,L,927,Gloucester,3,0,Surface water purchased,Local Government
+NJ1305001,SWP,L,1000,Monmouth,5,1,Surface water purchased,Local Government
+NJ1328002,SWP,L,7910,Monmouth,3,1,Surface water purchased,Local Government
 NJ0506012,GW,P,36,Cape May,1,0,Ground water,Private
-NJ0404001,GW,L,2815,Camden,1,1,Ground water,Local Government
-NJ1530003,GWP,L,86,Ocean,2,0,Groundwater purchased,Local Government
-NJ1530004,GW,L,12212,Ocean,1,0,Ground water,Local Government
-NJ1528001,GW,L,1675,Ocean,3,0,Ground water,Local Government
-NJ1530005,GW,L,725,Ocean,1,0,Ground water,Local Government
-NJ1435003,GW,P,205,Morris,15,0,Ground water,Private
-NJ1212001,SWP,L,2600,Middlesex,1,0,Surface water purchased,Local Government
-NJ1518010,GW,P,58,Ocean,2,0,Ground water,Private
-NJ0702001,SWP,L,12100,Essex,5,0,Surface water purchased,Local Government
-NJ1427009,GW,P,210,Morris,2,0,Ground water,Private
-NJ1427017,GW,L,244,Morris,1,0,Ground water,Local Government
-NJ2121001,GW,P,4099,Warren,3,0,Ground water,Private
-NJ2116003,GW,L,55,Warren,20,0,Ground water,Local Government
-NJ2103001,GW,P,1196,Warren,2,0,Ground water,Private
-NJ1427016,GW,P,168,Morris,27,0,Ground water,Private
-PA2520051,GW,P,120,Pike,10,0,Ground water,Private
-NY5521293,GW,P,15,Ulster,2,0,Ground water,Private
-NJ1901001,GW,L,274,Sussex,1,0,Ground water,Local Government
-NJ0805003,GW,P,48,Gloucester,5,3,Ground water,Private
-NJ1523001,GW,P,50,Ocean,1,0,Ground water,Private
-PA2450004,GW,P,24,Monroe,3,1,Ground water,Private
-NJ0605002,GW,P,204,Cumberland,2,0,Ground water,Private
-NJ1410001,SWP,L,4180,Morris,1,0,Surface water purchased,Local Government
-NJ1612001,SWP,L,3900,Passaic,1,0,Surface water purchased,Local Government
+NJ0404001,GW,L,2815,Camden,1,0,Ground water,Local Government
+NJ1511011,GW,P,45,Ocean,3,0,Ground water,Private
+NJ1518010,GW,P,58,Ocean,0,0,Ground water,Private
+NJ0702001,SWP,L,12100,Essex,6,4,Surface water purchased,Local Government
+NJ1427009,GW,P,210,Morris,0,0,Ground water,Private
+NJ1427017,GW,L,244,Morris,0,0,Ground water,Local Government
+NJ2121001,GW,P,4099,Warren,0,0,Ground water,Private
+NJ2116003,GW,L,55,Warren,0,0,Ground water,Local Government
+NJ2103001,GW,P,1196,Warren,0,0,Ground water,Private
+NJ1427016,GW,P,168,Morris,0,0,Ground water,Private
+PA2520051,GW,P,120,Pike,0,0,Ground water,Private
+NY5521293,GW,P,15,Ulster,0,0,Ground water,Private
+NJ1901001,GW,L,274,Sussex,0,0,Ground water,Local Government
+NJ0805003,GW,P,48,Gloucester,2,1,Ground water,Private
+NJ1523001,GW,P,50,Ocean,13,0,Ground water,Private
+PA2450004,GW,P,24,Monroe,11,0,Ground water,Private
+NJ0605002,GW,P,204,Cumberland,1,1,Ground water,Private
+NJ1410001,SWP,L,4180,Morris,21,0,Surface water purchased,Local Government
+NJ1612001,SWP,L,3900,Passaic,0,0,Surface water purchased,Local Government
 NJ1206001,SWP,L,878,Middlesex,2,0,Surface water purchased,Local Government
-NJ1916001,GW,L,880,Sussex,1,0,Ground water,Local Government
-NJ0314001,GWP,L,210,Burlington,19,0,Groundwater purchased,Local Government
-NJ2106304,GW,P,1,Warren,7,0,Ground water,Private
-NJ0306001,SWP,L,7071,Burlington,2,2,Surface water purchased,Local Government
-NJ0812001,SWP,L,1142,Gloucester,1,1,Surface water purchased,Local Government
-NJ0122001,GW,L,4635,Atlantic,1,0,Ground water,Local Government
-NJ0809002,SWP,P,1962,Gloucester,2,1,Surface water purchased,Private
-NJ0809001,SWP,P,336,Gloucester,1,0,Surface water purchased,Private
-NJ2102001,GW,L,1190,Warren,1,0,Ground water,Local Government
-NJ1507005,GW,P,48728,Ocean,1,0,Ground water,Private
-CT0347031,GW,P,46,Fairfield,2,0,Ground water,Private
-NJ0516001,GW,L,534,Cape May,2,0,Ground water,Local Government
-NJ0247001,GW,L,5066,Bergen,2,0,Ground water,Local Government
-NJ1215001,SW,L,11000,Middlesex,1,0,Surface water,Local Government
+NJ1916001,GW,L,880,Sussex,4,0,Ground water,Local Government
+NJ1530003,GWP,L,86,Ocean,0,0,Groundwater purchased,Local Government
+NJ1530004,GW,L,12212,Ocean,22,0,Ground water,Local Government
+NJ1528001,GW,L,1675,Ocean,0,0,Ground water,Local Government
+NJ1530005,GW,L,725,Ocean,2,0,Ground water,Local Government
+NJ1435003,GW,P,205,Morris,0,0,Ground water,Private
+NJ1212001,SWP,L,2600,Middlesex,0,0,Surface water purchased,Local Government
+NJ0314001,GWP,L,210,Burlington,1,0,Groundwater purchased,Local Government
+NJ2106304,GW,P,1,Warren,0,0,Ground water,Private
+NJ0306001,SWP,L,7071,Burlington,0,0,Surface water purchased,Local Government
+NJ0812001,SWP,L,1142,Gloucester,1,0,Surface water purchased,Local Government
+NJ0122001,GW,L,4635,Atlantic,1,1,Ground water,Local Government
+NJ0809002,SWP,P,1962,Gloucester,0,0,Surface water purchased,Private
+NJ0809001,SWP,P,336,Gloucester,0,0,Surface water purchased,Private
+NJ0516001,GW,L,534,Cape May,1,0,Ground water,Local Government
+NJ0247001,GW,L,5066,Bergen,1,1,Ground water,Local Government
+NJ1215001,SW,L,11000,Middlesex,0,0,Surface water,Local Government
 NJ0435324,GW,P,6,Camden,1,0,Ground water,Private
-NJ0333003,GW,P,60,Burlington,1,0,Ground water,Private
-NJ1019002,GW,S,15,Hunterdon,3,0,Ground water,State Government
-NJ0506013,GW,P,54,Cape May,1,0,Ground water,Private
-NJ2113301,GW,P,1,Warren,1,0,Ground water,Private
-NJ0511001,GW,P,129,Cape May,1,0,Ground water,Private
-NJ0119002,GW,P,41318,Atlantic,2,0,Ground water,Private
-NJ0508001,GW,P,13677,Cape May,3,0,Ground water,Private
-PA6250085,GW,P,141,Erie,2,0,Ground water,Private
-NJ1322001,SWP,L,2400,Monmouth,13,0,Surface water purchased,Local Government
-NJ0703001,SWP,L,1917,Essex,3,1,Surface water purchased,Local Government
-NJ0257001,SWP,L,5400,Bergen,1,0,Surface water purchased,Local Government
-NJ1205001,SWP,L,11810,Middlesex,1,0,Surface water purchased,Local Government
-NJ2004001,SWP,L,17550,Union,52,0,Surface water purchased,Local Government
-DE0000650,GW,P,14,Sussex,17,0,Ground water,Private
-PA7380009,GW,P,44,Lebanon,1,0,Ground water,Private
-NJ1523004,GW,P,49,Ocean,1,0,Ground water,Private
-NJ0326009,GW,P,42,Burlington,1,1,Ground water,Private
-NJ1332314,GW,P,1,Monmouth,1,0,Ground water,Private
-NJ0506010,GW,P,2255,Cape May,2,0,Ground water,Private
-NJ0614002,GW,P,310,Cumberland,1,0,Ground water,Private
-NJ0714001,SW,L,35114,Essex,28,0,Surface water,Local Government
-NJ0715001,SWP,L,2028,Essex,1,0,Surface water purchased,Local Government
-NJ0329008,GW,P,96,Burlington,20,0,Ground water,Private
-NJ0311001,GW,P,56,Burlington,1,0,Ground water,Private
+NJ0333003,GW,P,60,Burlington,5,3,Ground water,Private
+NJ1019002,GW,S,15,Hunterdon,6,0,Ground water,State Government
+NJ0506013,GW,P,54,Cape May,0,0,Ground water,Private
+NJ2113301,GW,P,1,Warren,3,1,Ground water,Private
+NJ0511001,GW,P,129,Cape May,0,0,Ground water,Private
+NJ0119002,GW,P,41318,Atlantic,0,0,Ground water,Private
+NJ0508001,GW,P,13677,Cape May,0,0,Ground water,Private
+NJ0506010,GW,P,2255,Cape May,0,0,Ground water,Private
+NJ0614002,GW,P,310,Cumberland,0,0,Ground water,Private
+NJ0714001,SW,L,35114,Essex,5,2,Surface water,Local Government
+NJ0715001,SWP,L,2028,Essex,2,0,Surface water purchased,Local Government
+NJ2102001,GW,L,1190,Warren,22,0,Ground water,Local Government
+NJ1507005,GW,P,48728,Ocean,0,0,Ground water,Private
+CT0347031,GW,P,46,Fairfield,1,0,Ground water,Private
+PA6250085,GW,P,141,Erie,7,0,Ground water,Private
+NJ0329008,GW,P,96,Burlington,0,0,Ground water,Private
+NJ0311001,GW,P,56,Burlington,0,0,Ground water,Private
 NJ0111004,GW,P,46,Atlantic,1,0,Ground water,Private
-NJ1714001,GW,P,80,Salem,4,1,Ground water,Private
-NJ0332002,GW,P,99,Burlington,1,0,Ground water,Private
-NJ0416001,SWP,L,3902,Camden,1,0,Surface water purchased,Local Government
+NJ1714001,GW,P,80,Salem,9,0,Ground water,Private
+NJ0332002,GW,P,99,Burlington,27,0,Ground water,Private
+NJ0416001,SWP,L,3902,Camden,2,0,Surface water purchased,Local Government
 NJ0105002,GW,P,56,Atlantic,1,0,Ground water,Private
 NJ0816001,GW,P,50,Gloucester,1,0,Ground water,Private
 NJ1414006,GW,P,34,Morris,1,0,Ground water,Private
-NY4301309,GW,P,46,Rockland,18,0,Ground water,Private
-NJ1510001,GW,L,890,Ocean,3,0,Ground water,Local Government
-NJ1903001,GW,L,359,Sussex,1,0,Ground water,Local Government
-NJ0405001,SWP,L,4915,Camden,1,0,Surface water purchased,Local Government
-NJ2101001,GW,L,1953,Warren,1,0,Ground water,Local Government
-NJ1702001,GW,L,540,Salem,33,0,Ground water,Local Government
-NJ1011001,GW,P,453,Hunterdon,2,0,Ground water,Private
-NJ1012001,GW,L,620,Hunterdon,1,0,Ground water,Local Government
-NJ1518011,GWP,P,197,Ocean,1,0,Groundwater purchased,Private
-NJ1518005,GW,L,10787,Ocean,2,1,Ground water,Local Government
-NJ1518004,GW,L,9943,Ocean,1,1,Ground water,Local Government
-NJ1304001,GW,L,1800,Monmouth,2,0,Ground water,Local Government
+NY4301309,GW,P,46,Rockland,0,0,Ground water,Private
+NJ1510001,GW,L,890,Ocean,1,1,Ground water,Local Government
+NJ1903001,GW,L,359,Sussex,0,0,Ground water,Local Government
+NJ0405001,SWP,L,4915,Camden,2,0,Surface water purchased,Local Government
+NJ2101001,GW,L,1953,Warren,2,0,Ground water,Local Government
+NJ1702001,GW,L,540,Salem,1,1,Ground water,Local Government
+NJ1322001,SWP,L,2400,Monmouth,2,0,Surface water purchased,Local Government
+NJ0703001,SWP,L,1917,Essex,0,0,Surface water purchased,Local Government
+NJ0257001,SWP,L,5400,Bergen,2,2,Surface water purchased,Local Government
+NJ1205001,SWP,L,11810,Middlesex,0,0,Surface water purchased,Local Government
+NJ2004001,SWP,L,17550,Union,0,0,Surface water purchased,Local Government
+DE0000650,GW,P,14,Sussex,0,0,Ground water,Private
+PA7380009,GW,P,44,Lebanon,15,0,Ground water,Private
+NJ1523004,GW,P,49,Ocean,0,0,Ground water,Private
+NJ0326009,GW,P,42,Burlington,1,1,Ground water,Private
+NJ1332314,GW,P,1,Monmouth,0,0,Ground water,Private
+NJ1011001,GW,P,453,Hunterdon,0,0,Ground water,Private
+NJ1012001,GW,L,620,Hunterdon,1,1,Ground water,Local Government
+NJ1518011,GWP,P,197,Ocean,0,0,Groundwater purchased,Private
+NJ1518005,GW,L,10787,Ocean,2,0,Ground water,Local Government
+NJ1518004,GW,L,9943,Ocean,0,0,Ground water,Local Government
+NJ1304001,GW,L,1800,Monmouth,18,0,Ground water,Local Government
 NJ1306001,SWP,L,3253,Monmouth,1,0,Surface water purchased,Local Government
-NJ1415002,SWP,L,620,Morris,2,1,Surface water purchased,Local Government
-VT0005462,GW,P,42,Windsor,3,0,Ground water,Private
+NJ1415002,SWP,L,620,Morris,4,2,Surface water purchased,Local Government
+VT0005462,GW,P,42,Windsor,0,0,Ground water,Private
 NJ1404001,GW,L,2952,Morris,1,0,Ground water,Local Government
-NJ0509001,GW,L,6564,Cape May,1,0,Ground water,Local Government
-NJ1604001,GW,L,5999,"Bergen,Passaic",1,0,Ground water,Local Government
-NJ0609001,GW,S,41,Cumberland,1,0,Ground water,State Government
-NJ0326007,GW,P,52,Burlington,1,0,Ground water,Private
+NJ0609001,GW,S,41,Cumberland,3,1,Ground water,State Government
+NJ0326007,GW,P,52,Burlington,0,0,Ground water,Private
 NJ1517003,GWP,L,1500,Ocean,1,0,Groundwater purchased,Local Government
-NJ0303001,GW,L,5180,Burlington,2,0,Ground water,Local Government
-NJ1207001,SWP,L,3100,Middlesex,1,1,Surface water purchased,Local Government
-NJ1429001,SWP,L,15000,Morris,1,1,Surface water purchased,Local Government
-NJ1308001,SWP,L,2140,Monmouth,1,0,Surface water purchased,Local Government
-NJ1432003,GWP,L,5000,Morris,2,0,Groundwater purchased,Local Government
-NJ0232001,SWP,L,6000,Bergen,20,0,Surface water purchased,Local Government
-NJ0111006,GW,P,140,Atlantic,1,0,Ground water,Private
-NJ1428001,GW,L,1510,Morris,30,0,Ground water,Local Government
-NJ1506001,SW,L,38504,Ocean,1,0,Surface water,Local Government
-NJ0907001,SWP,L,8061,Hudson,1,0,Surface water purchased,Local Government
-PA1090106,GW,M,54,Bucks,1,0,Ground water,Mixed
+NJ0509001,GW,L,6564,Cape May,1,0,Ground water,Local Government
+NJ1604001,GW,L,5999,"Bergen,Passaic",0,0,Ground water,Local Government
+NJ0303001,GW,L,5180,Burlington,36,0,Ground water,Local Government
+NJ1207001,SWP,L,3100,Middlesex,3,1,Surface water purchased,Local Government
+NJ1429001,SWP,L,15000,Morris,2,0,Surface water purchased,Local Government
 NJ1414014,GW,P,53,Morris,1,0,Ground water,Private
-NJ0505003,GW,P,40,Cape May,3,0,Ground water,Private
-NJ1025001,GW,S,32,Hunterdon,1,0,Ground water,State Government
-NJ1330004,SWP,L,99,Monmouth,1,0,Surface water purchased,Local Government
+NJ0505003,GW,P,40,Cape May,0,0,Ground water,Private
+NJ1025001,GW,S,32,Hunterdon,0,0,Ground water,State Government
+NJ1330004,SWP,L,99,Monmouth,6,0,Surface water purchased,Local Government
 NJ1918003,GW,L,558,Sussex,1,0,Ground water,Local Government
-NJ1918004,GW,L,5423,Sussex,1,0,Ground water,Local Government
-NJ1918013,GW,L,117,Sussex,15,0,Ground water,Local Government
-NJ1413001,GW,P,97,Morris,1,0,Ground water,Private
-NJ0818004,GW,L,15927,Gloucester,1,0,Ground water,Local Government
-NJ2113003,GW,P,20,Warren,1,0,Ground water,Private
-NJ1326004,SW,P,3,Monmouth,3,0,Surface water,Private
-NJ1326007,SWP,L,230,Monmouth,2,2,Surface water purchased,Local Government
-NJ1326005,SWP,L,19,Monmouth,1,0,Surface water purchased,Local Government
-NJ1326002,SWP,L,2299,Monmouth,1,0,Surface water purchased,Local Government
-NJ0115001,GW,L,1192,Atlantic,1,0,Ground water,Local Government
-NJ1511008,GW,P,250,Ocean,1,0,Ground water,Private
-NJ0108004,GW,P,88,Atlantic,1,0,Ground water,Private
-NJ0332001,GW,P,110,Burlington,18,0,Ground water,Private
-NJ0506321,GW,P,34,Cape May,8,0,Ground water,Private
+NJ1918004,GW,L,5423,Sussex,4,1,Ground water,Local Government
+NJ1918013,GW,L,117,Sussex,1,1,Ground water,Local Government
+NJ1413001,GW,P,97,Morris,0,0,Ground water,Private
+NJ1308001,SWP,L,2140,Monmouth,1,0,Surface water purchased,Local Government
+NJ1432003,GWP,L,5000,Morris,2,1,Groundwater purchased,Local Government
+NJ0232001,SWP,L,6000,Bergen,4,0,Surface water purchased,Local Government
+NJ0111006,GW,P,140,Atlantic,0,0,Ground water,Private
+NJ1428001,GW,L,1510,Morris,1,0,Ground water,Local Government
+NJ1506001,SW,L,38504,Ocean,2,0,Surface water,Local Government
+NJ0907001,SWP,L,8061,Hudson,0,0,Surface water purchased,Local Government
+NJ0818004,GW,L,15927,Gloucester,128,0,Ground water,Local Government
+NJ2113003,GW,P,20,Warren,2,2,Ground water,Private
+NJ1326004,SW,P,3,Monmouth,0,0,Surface water,Private
+NJ1326007,SWP,L,230,Monmouth,0,0,Surface water purchased,Local Government
+NJ1326005,SWP,L,19,Monmouth,0,0,Surface water purchased,Local Government
+NJ1326002,SWP,L,2299,Monmouth,0,0,Surface water purchased,Local Government
+NJ0115001,GW,L,1192,Atlantic,0,0,Ground water,Local Government
+NJ1511008,GW,P,250,Ocean,0,0,Ground water,Private
+NJ0108004,GW,P,88,Atlantic,0,0,Ground water,Private
+NJ0332001,GW,P,110,Burlington,2,0,Ground water,Private
+NJ0506321,GW,P,34,Cape May,15,0,Ground water,Private
 NJ1924002,GW,P,57,Sussex,2,0,Ground water,Private
 NJ0708001,SWP,L,2200,Essex,1,0,Surface water purchased,Local Government
-NJ1527001,GW,L,1833,Ocean,2,2,Ground water,Local Government
-NJ2021001,SWP,P,254,Union,21,0,Surface water purchased,Private
-NJ1414013,GW,P,30,Morris,1,0,Ground water,Private
-NJ1348001,SWP,L,1880,Monmouth,1,0,Surface water purchased,Local Government
-NJ1329001,SWP,L,2840,"Middlesex,Monmouth",20,0,Surface water purchased,Local Government
-NJ0104003,GW,L,1442,Atlantic,1,0,Ground water,Local Government
-NJ1421305,GW,P,1,Morris,1,0,Ground water,Private
-NJ0607001,GW,P,92,Cumberland,2,0,Ground water,Private
-NJ1531001,GW,L,2895,Ocean,1,0,Ground water,Local Government
-NJ0338001,GW,L,12635,Burlington,1,0,Ground water,Local Government
+NJ1527001,GW,L,1833,Ocean,0,0,Ground water,Local Government
+NJ2021001,SWP,P,254,Union,2,1,Surface water purchased,Private
+NJ1414013,GW,P,30,Morris,0,0,Ground water,Private
 NJ1014001,GW,L,1472,Hunterdon,1,1,Ground water,Local Government
-NJ0823001,SWP,L,1140,Gloucester,1,0,Surface water purchased,Local Government
-NJ1344001,SWP,L,1271,Monmouth,3,1,Surface water purchased,Local Government
-NJ0233001,SW,L,8770,Bergen,1,0,Surface water,Local Government
-NJ1912001,GW,L,2117,Sussex,1,0,Ground water,Local Government
-NJ0710001,SWP,L,12548,Essex,1,0,Surface water purchased,Local Government
-NJ1915001,SW,L,2421,Sussex,2,2,Surface water,Local Government
-NJ1615014,GW,L,206,Passaic,1,1,Ground water,Local Government
-NJ1615012,GW,L,185,Passaic,1,0,Ground water,Local Government
-NJ1615006,GW,L,32,Passaic,1,1,Ground water,Local Government
-NJ1615002,GW,L,188,Passaic,1,1,Ground water,Local Government
-NJ1615001,GW,L,54,Passaic,2,2,Ground water,Local Government
+NJ0823001,SWP,L,1140,Gloucester,0,0,Surface water purchased,Local Government
+NJ1344001,SWP,L,1271,Monmouth,1,0,Surface water purchased,Local Government
+NJ0233001,SW,L,8770,Bergen,2,0,Surface water,Local Government
+NJ1912001,GW,L,2117,Sussex,40,1,Ground water,Local Government
+NJ0710001,SWP,L,12548,Essex,59,0,Surface water purchased,Local Government
+NJ1915001,SW,L,2421,Sussex,1,0,Surface water,Local Government
+NJ1615014,GW,L,206,Passaic,2,0,Ground water,Local Government
+NJ1615012,GW,L,185,Passaic,17,1,Ground water,Local Government
+NJ1615006,GW,L,32,Passaic,3,0,Ground water,Local Government
+NJ1615002,GW,L,188,Passaic,2,0,Ground water,Local Government
+NJ1615001,GW,L,54,Passaic,17,0,Ground water,Local Government
 NJ1615018,GW,L,443,Passaic,2,0,Ground water,Local Government
-NJ1615016,GW,L,588,Passaic,2,0,Ground water,Local Government
-NJ1209002,GW,L,19387,Middlesex,1,0,Ground water,Local Government
-NJ1436002,GW,P,3905,Morris,1,1,Ground water,Private
-NJ1017001,SW,P,1790,Hunterdon,2,1,Surface water,Private
-NJ0328001,GW,L,664,Burlington,1,0,Ground water,Local Government
-NJ1902007,GW,P,40,Sussex,1,0,Ground water,Private
-NJ1808001,SWP,L,13287,Somerset,1,0,Surface water purchased,Local Government
-NJ0107001,GW,L,1508,Atlantic,3,1,Ground water,Local Government
-NY1710676,GW,P,20,Fulton,1,0,Ground water,Private
-NY1701511,GW,P,46,Fulton,1,1,Ground water,Private
-NJ0503001,GWP,L,625,Cape May,1,1,Groundwater purchased,Local Government
-NJ1421003,SWP,L,6596,Morris,2,2,Surface water purchased,Local Government
-NJ0436010,GW,P,45,Camden,1,0,Ground water,Private
-NJ0613004,GW,L,860,Cumberland,6,5,Ground water,Local Government
-PA2450104,GW,P,20,Monroe,1,0,Ground water,Private
-PA2400007,GW,P,28,Luzerne,17,0,Ground water,Private
-PA2400008,GW,P,51,Luzerne,1,1,Ground water,Private
-NJ1424001,SW,L,17349,Morris,3,0,Surface water,Local Government
-NJ0217001,SWP,L,11000,Bergen,16,0,Surface water purchased,Local Government
-NJ0108019,GW,P,158,Atlantic,17,0,Ground water,Private
-NJ1504001,GW,L,3804,Ocean,3,1,Ground water,Local Government
-NJ1007001,GW,L,173,Hunterdon,20,0,Ground water,Local Government
-NJ1436003,GW,L,1777,Morris,1,1,Ground water,Local Government
-NJ1436004,GW,L,1544,Morris,1,1,Ground water,Local Government
-NJ1436006,GW,L,31,Morris,14,0,Ground water,Local Government
-NJ1025313,GW,P,1,Hunterdon,1,0,Ground water,Private
-NJ0721001,SWP,L,3799,Essex,2,0,Surface water purchased,Local Government
-NJ0819001,GW,L,834,Gloucester,2,2,Ground water,Local Government
-NJ0813001,GW,L,695,"Cumberland,Gloucester",1,1,Ground water,Local Government
-NJ0116001,GW,L,7200,Atlantic,20,1,Ground water,Local Government
-NJ1511013,GW,P,149,Ocean,2,2,Ground water,Private
-NJ0906001,SW,L,36000,Hudson,12,0,Surface water,Local Government
-NJ0905001,SWP,L,4500,Hudson,9,0,Surface water purchased,Local Government
-NJ0333002,GW,P,339,Burlington,1,1,Ground water,Private
-NJ1352005,SW,L,6,Monmouth,2,2,Surface water,Local Government
-NJ1327001,GW,L,3229,Monmouth,1,1,Ground water,Local Government
-NJ0821001,GW,L,1850,Gloucester,24,2,Ground water,Local Government
-NJ0407001,GW,L,940,Camden,1,0,Ground water,Local Government
-NJ0324001,SWP,L,17634,Burlington,4,2,Surface water purchased,Local Government
-NY4320531,GW,P,9,Rockland,1,0,Ground water,Private
+NJ1615016,GW,L,588,Passaic,7,0,Ground water,Local Government
+NJ1209002,GW,L,19387,Middlesex,2,2,Ground water,Local Government
+PA1090106,GW,M,54,Bucks,1,0,Ground water,Mixed
+NJ1348001,SWP,L,1880,Monmouth,0,0,Surface water purchased,Local Government
+NJ1329001,SWP,L,2840,"Middlesex,Monmouth",3,1,Surface water purchased,Local Government
+NJ0104003,GW,L,1442,Atlantic,0,0,Ground water,Local Government
+NJ1421305,GW,P,1,Morris,2,0,Ground water,Private
+NJ0607001,GW,P,92,Cumberland,1,0,Ground water,Private
+NJ1531001,GW,L,2895,Ocean,2,0,Ground water,Local Government
+NJ0338001,GW,L,12635,Burlington,2,0,Ground water,Local Government
+NJ1436002,GW,P,3905,Morris,16,0,Ground water,Private
+NJ1017001,SW,P,1790,Hunterdon,0,0,Surface water,Private
+NJ0328001,GW,L,664,Burlington,3,0,Ground water,Local Government
+NJ1902007,GW,P,40,Sussex,3,0,Ground water,Private
+NJ1808001,SWP,L,13287,Somerset,2,1,Surface water purchased,Local Government
+NJ0107001,GW,L,1508,Atlantic,0,0,Ground water,Local Government
+NY1710676,GW,P,20,Fulton,0,0,Ground water,Private
+NY1701511,GW,P,46,Fulton,2,0,Ground water,Private
+NJ0503001,GWP,L,625,Cape May,2,0,Groundwater purchased,Local Government
+NJ1421003,SWP,L,6596,Morris,1,0,Surface water purchased,Local Government
+NJ0436010,GW,P,45,Camden,2,0,Ground water,Private
+NJ0613004,GW,L,860,Cumberland,12,0,Ground water,Local Government
+PA2450104,GW,P,20,Monroe,17,0,Ground water,Private
+PA2400007,GW,P,28,Luzerne,3,0,Ground water,Private
+PA2400008,GW,P,51,Luzerne,1,0,Ground water,Private
+NJ1424001,SW,L,17349,Morris,47,0,Surface water,Local Government
+NJ0217001,SWP,L,11000,Bergen,33,2,Surface water purchased,Local Government
+NJ0108019,GW,P,158,Atlantic,0,0,Ground water,Private
+NJ1504001,GW,L,3804,Ocean,0,0,Ground water,Local Government
+NJ1007001,GW,L,173,Hunterdon,0,0,Ground water,Local Government
+NJ1511013,GW,P,149,Ocean,0,0,Ground water,Private
+NJ0906001,SW,L,36000,Hudson,0,0,Surface water,Local Government
+NJ1436003,GW,L,1777,Morris,2,0,Ground water,Local Government
+NJ1436004,GW,L,1544,Morris,0,0,Ground water,Local Government
+NJ1436006,GW,L,31,Morris,0,0,Ground water,Local Government
+NJ1025313,GW,P,1,Hunterdon,0,0,Ground water,Private
+NJ0721001,SWP,L,3799,Essex,1,0,Surface water purchased,Local Government
+NJ0819001,GW,L,834,Gloucester,1,0,Ground water,Local Government
+NJ0813001,GW,L,695,"Cumberland,Gloucester",2,0,Ground water,Local Government
+NJ0116001,GW,L,7200,Atlantic,19,0,Ground water,Local Government
+NJ0905001,SWP,L,4500,Hudson,0,0,Surface water purchased,Local Government
+NJ0333002,GW,P,339,Burlington,1,0,Ground water,Private
+NJ0324001,SWP,L,17634,Burlington,0,0,Surface water purchased,Local Government
+NY4320531,GW,P,9,Rockland,0,0,Ground water,Private
+NJ1352005,SW,L,6,Monmouth,1,0,Surface water,Local Government
+NJ1327001,GW,L,3229,Monmouth,2,0,Ground water,Local Government
+NJ0821001,GW,L,1850,Gloucester,2,0,Ground water,Local Government
+NJ0407001,GW,L,940,Camden,2,0,Ground water,Local Government
 NJ1106001,GW,L,105,Mercer,1,0,Ground water,Local Government
-NJ1319009,GW,P,92,Monmouth,1,0,Ground water,Private
-NJ1326321,GW,P,3,Monmouth,1,0,Ground water,Private
-NJ1406002,GW,P,50,Morris,6,0,Ground water,Private
-NJ1319008,GW,P,52,Monmouth,6,4,Ground water,Private
-NJ1614001,SWP,L,18000,Passaic,2,1,Surface water purchased,Local Government
+NJ1319009,GW,P,92,Monmouth,0,0,Ground water,Private
+NJ1326321,GW,P,3,Monmouth,0,0,Ground water,Private
+NJ1406002,GW,P,50,Morris,1,1,Ground water,Private
+NJ1319008,GW,P,52,Monmouth,0,0,Ground water,Private
+NJ1614001,SWP,L,18000,Passaic,0,0,Surface water purchased,Local Government
 NJ1013001,GW,L,445,Hunterdon,1,0,Ground water,Local Government
-NJ0810005,GW,P,36,Gloucester,1,0,Ground water,Private
-NJ0211001,SWP,L,5300,Bergen,3,0,Surface water purchased,Local Government
-NJ1803002,GW,P,50,Somerset,1,0,Ground water,Private
-NJ1309001,SWP,F,170,Monmouth,59,0,Surface water purchased,Federal Government
-NJ1403001,SW,L,2449,"Morris,Passaic",1,0,Surface water,Local Government
-CA1200706,SW,P,72,Humboldt,5,2,Surface water,Private
-RI1559513,GW,P,92,Washington,2,0,Ground water,Private
+NJ0810005,GW,P,36,Gloucester,2,2,Ground water,Private
+NJ0211001,SWP,L,5300,Bergen,2,1,Surface water purchased,Local Government
+NJ1408001,GW,L,5000,Morris,18,0,Ground water,Local Government
+NJ0429001,GW,P,2,Camden,20,0,Ground water,Private
+NJ1309001,SWP,F,170,Monmouth,0,0,Surface water purchased,Federal Government
+NJ1403001,SW,L,2449,"Morris,Passaic",0,0,Surface water,Local Government
+CA1200706,SW,P,72,Humboldt,0,0,Surface water,Private
+RI1559513,GW,P,92,Washington,1,1,Ground water,Private
 NJ2120001,GWP,P,22,Warren,2,0,Groundwater purchased,Private
-NJ2119001,GU,P,10312,Warren,18,0,Ground water under influence of surface water source,Private
-NJ1015004,GW,P,69,Hunterdon,4,0,Ground water,Private
-NJ2120002,GW,P,73,Warren,2,0,Ground water,Private
+NJ2119001,GU,P,10312,Warren,0,0,Ground water under influence of surface water source,Private
+NJ1015004,GW,P,69,Hunterdon,0,0,Ground water,Private
+NJ2120002,GW,P,73,Warren,0,0,Ground water,Private
 NJ1019001,GW,P,97,Hunterdon,1,0,Ground water,Private
-NJ0805002,GW,P,46,Gloucester,1,1,Ground water,Private
-NJ2110001,GW,P,52,Warren,1,0,Ground water,Private
-NJ2110003,GW,P,17,Warren,3,0,Ground water,Private
-NJ1907002,GW,P,88,Sussex,1,1,Ground water,Private
-NJ1908001,GU,P,46,Sussex,1,0,Ground water under influence of surface water source,Private
-NJ1015003,GW,P,239,Hunterdon,2,1,Ground water,Private
-NJ1004001,GW,P,596,Hunterdon,1,1,Ground water,Private
-NJ1904009,GW,P,153,Sussex,2,0,Ground water,Private
-NJ1438001,GW,P,34,Morris,1,0,Ground water,Private
-NJ1911001,GW,P,389,Sussex,1,1,Ground water,Private
+NJ0805002,GW,P,46,Gloucester,0,0,Ground water,Private
+NJ2110001,GW,P,52,Warren,0,0,Ground water,Private
+NJ2110003,GW,P,17,Warren,0,0,Ground water,Private
+NJ1907002,GW,P,88,Sussex,0,0,Ground water,Private
+NJ1908001,GU,P,46,Sussex,0,0,Ground water under influence of surface water source,Private
+NJ1015003,GW,P,239,Hunterdon,0,0,Ground water,Private
+NJ1004001,GW,P,596,Hunterdon,0,0,Ground water,Private
+NJ1904009,GW,P,153,Sussex,3,2,Ground water,Private
+NJ1438001,GW,P,34,Morris,2,1,Ground water,Private
+NJ1911001,GW,P,389,Sussex,2,0,Ground water,Private
 NJ1911004,GW,L,76,Sussex,1,0,Ground water,Local Government
-NJ1505003,GW,P,1272,Ocean,2,1,Ground water,Private
-NJ1321001,SWP,L,3230,Monmouth,3,0,Surface water purchased,Local Government
-NJ1216001,GU,L,8611,Middlesex,2,0,Ground water under influence of surface water source,Local Government
-NJ1415001,GW,P,860,Morris,1,1,Ground water,Private
-NJ1009001,GW,L,1316,Hunterdon,1,0,Ground water,Local Government
-NJ0512001,GWP,L,795,Cape May,3,0,Groundwater purchased,Local Government
-NJ1408001,GW,L,5000,Morris,1,0,Ground water,Local Government
-NJ0429001,GW,P,2,Camden,1,1,Ground water,Private
-NJ0108023,GW,P,124,Atlantic,16,0,Ground water,Private
-PA6370015,GW,P,28,Lawrence,2,1,Ground water,Private
-NJ1910002,GW,P,129,Sussex,1,0,Ground water,Private
-NJ1906001,GW,P,167,Sussex,1,0,Ground water,Private
-NJ1518345,GW,P,1,Ocean,1,1,Ground water,Private
-NJ0123002,GW,P,475,Atlantic,1,0,Ground water,Private
-NJ0319001,SWP,L,4377,Burlington,2,2,Surface water purchased,Local Government
-NJ1615340,GW,P,1,Passaic,2,2,Ground water,Private
-NJ0323001,SWP,P,14295,Burlington,1,0,Surface water purchased,Private
-NJ1707001,SWP,P,4629,Salem,20,0,Surface water purchased,Private
-NJ0808001,SWP,P,2675,Gloucester,2,1,Surface water purchased,Private
-NJ0333004,GW,P,240,Burlington,2,1,Ground water,Private
-NJ0329006,GW,P,334,Burlington,1,0,Ground water,Private
-NJ0318002,GW,P,1210,Burlington,19,0,Ground water,Private
+NJ1505003,GW,P,1272,Ocean,0,0,Ground water,Private
+NJ1803002,GW,P,50,Somerset,0,0,Ground water,Private
+NJ1415001,GW,P,860,Morris,1,0,Ground water,Private
+NJ1321001,SWP,L,3230,Monmouth,22,2,Surface water purchased,Local Government
+NJ1216001,GU,L,8611,Middlesex,17,0,Ground water under influence of surface water source,Local Government
+NJ0108023,GW,P,124,Atlantic,0,0,Ground water,Private
+NJ1009001,GW,L,1316,Hunterdon,3,0,Ground water,Local Government
+NJ0512001,GWP,L,795,Cape May,0,0,Groundwater purchased,Local Government
+PA6370015,GW,P,28,Lawrence,9,0,Ground water,Private
+NJ1910002,GW,P,129,Sussex,0,0,Ground water,Private
+NJ1906001,GW,P,167,Sussex,4,0,Ground water,Private
+NJ1518345,GW,P,1,Ocean,0,0,Ground water,Private
+NJ0123002,GW,P,475,Atlantic,3,0,Ground water,Private
+NJ0319001,SWP,L,4377,Burlington,9,0,Surface water purchased,Local Government
+NJ1615340,GW,P,1,Passaic,1,1,Ground water,Private
+NJ0323001,SWP,P,14295,Burlington,0,0,Surface water purchased,Private
+NJ1707001,SWP,P,4629,Salem,0,0,Surface water purchased,Private
+NJ0808001,SWP,P,2675,Gloucester,0,0,Surface water purchased,Private
+NJ0333004,GW,P,240,Burlington,0,0,Ground water,Private
+NJ0329006,GW,P,334,Burlington,0,0,Ground water,Private
+NJ0318002,GW,P,1210,Burlington,1,0,Ground water,Private
 NJ0301001,GW,P,24,Burlington,1,0,Ground water,Private
-NJ1524001,SWP,L,7850,Ocean,2,0,Surface water purchased,Local Government
-NJ2104001,GW,L,214,Warren,2,2,Ground water,Local Government
+NJ1524001,SWP,L,7850,Ocean,15,1,Surface water purchased,Local Government
+NJ2104001,GW,L,214,Warren,4,0,Ground water,Local Government
 NJ1427010,GW,P,17,Morris,1,0,Ground water,Private
-PA7360094,GW,M,59,Lancaster,5,0,Ground water,Mixed
-NJ0233005,GW,P,135,Bergen,1,0,Ground water,Private
-NJ0311002,GW,P,39,Burlington,2,2,Ground water,Private
+PA7360094,GW,M,59,Lancaster,0,0,Ground water,Mixed
+NJ0233005,GW,P,135,Bergen,2,0,Ground water,Private
+NJ0311002,GW,P,39,Burlington,1,0,Ground water,Private
 NJ0514001,GW,L,17055,Cape May,1,0,Ground water,Local Government
-NJ1530007,GW,P,11,Ocean,1,0,Ground water,Private
-NJ2103002,GW,P,4,Warren,2,2,Ground water,Private
-NJ1345001,SW,P,125947,"Monmouth,Ocean",2,0,Surface water,Private
-NJ1350001,SWP,L,2450,Monmouth,3,0,Surface water purchased,Local Government
-NJ1518002,GW,P,1236,Ocean,1,0,Ground water,Private
-NJ1006300,GW,P,1,Hunterdon,2,0,Ground water,Private
-NJ1615009,GW,P,20,Passaic,1,1,Ground water,Private
+NJ1530007,GW,P,11,Ocean,0,0,Ground water,Private
+NJ2103002,GW,P,4,Warren,3,2,Ground water,Private
+NJ1345001,SW,P,125947,"Monmouth,Ocean",3,0,Surface water,Private
+NJ1350001,SWP,L,2450,Monmouth,0,0,Surface water purchased,Local Government
+NJ1518002,GW,P,1236,Ocean,0,0,Ground water,Private
+NJ1006300,GW,P,1,Hunterdon,0,0,Ground water,Private
+PA6200066,GW,P,102,Crawford,2,0,Ground water,Private
+NY1710675,GW,P,20,Fulton,1,0,Ground water,Private
+PA3480054,GW,P,25,Northampton,17,0,Ground water,Private
+NJ0428002,SWP,L,3304,Camden,0,0,Surface water purchased,Local Government
+NJ1606301,GW,P,1,Passaic,0,0,Ground water,Private
+NJ0424001,SWP,L,15010,Camden,28,0,Surface water purchased,Local Government
+NJ0712001,SW,P,81832,"Essex,Hunterdon,Morris,Passaic,Somerset,Union,Warren",1,0,Surface water,Private
+NJ1407001,GW,P,120,Morris,0,0,Ground water,Private
+NJ1021363,GW,L,284,Hunterdon,0,0,Ground water,Local Government
+NJ1315001,GW,L,4010,Monmouth,3,0,Ground water,Local Government
+NJ0123001,GWP,L,206,Atlantic,0,0,Groundwater purchased,Local Government
+NJ0713001,SWP,L,10635,Essex,0,0,Surface water purchased,Local Government
+NJ1414008,GW,P,54,Morris,0,0,Ground water,Private
+NJ0516003,GW,P,236,Cape May,20,0,Ground water,Private
+NJ0506004,GW,P,79,Cape May,0,0,Ground water,Private
+NJ0715002,SWP,L,15,Essex,2,0,Surface water purchased,Local Government
+NJ1401001,SW,L,2888,Morris,3,0,Surface water,Local Government
+NJ1615009,GW,P,20,Passaic,1,0,Ground water,Private
 NJ0339001,GW,S,40,Burlington,2,0,Ground water,State Government
-PA6200066,GW,P,102,Crawford,1,0,Ground water,Private
-NY1710675,GW,P,20,Fulton,1,1,Ground water,Private
-PA3480054,GW,P,25,Northampton,1,1,Ground water,Private
-NJ0428002,SWP,L,3304,Camden,3,1,Surface water purchased,Local Government
-NJ1606301,GW,P,1,Passaic,1,1,Ground water,Private
-NJ0424001,SWP,L,15010,Camden,128,0,Surface water purchased,Local Government
-NJ0712001,SW,P,81832,"Essex,Hunterdon,Morris,Passaic,Somerset,Union,Warren",3,0,Surface water,Private
-NJ1407001,GW,P,120,Morris,2,1,Ground water,Private
-NJ1438004,GW,L,1492,Morris,2,1,Ground water,Local Government
-NJ1021363,GW,L,284,Hunterdon,2,2,Ground water,Local Government
-NJ1315001,GW,L,4010,Monmouth,2,1,Ground water,Local Government
-NJ0123001,GWP,L,206,Atlantic,1,1,Groundwater purchased,Local Government
-NJ0713001,SWP,L,10635,Essex,2,1,Surface water purchased,Local Government
-NJ1414008,GW,P,54,Morris,1,1,Ground water,Private
-NJ0516003,GW,P,236,Cape May,2,0,Ground water,Private
-NJ0506004,GW,P,79,Cape May,1,0,Ground water,Private
-NJ0715002,SWP,L,15,Essex,3,0,Surface water purchased,Local Government
-NJ1401001,SW,L,2888,Morris,1,1,Surface water,Local Government
-NJ0435003,GW,L,1021,Camden,2,0,Ground water,Local Government
-NJ1904004,GW,P,31,Sussex,3,0,Ground water,Private
-NJ0806001,SWP,L,6200,Gloucester,3,1,Surface water purchased,Local Government
-NJ1019311,GW,P,1,Hunterdon,2,1,Ground water,Private
-NJ0326001,GW,P,140,Burlington,2,0,Ground water,Private
+NJ1438004,GW,L,1492,Morris,18,0,Ground water,Local Government
+NJ0435003,GW,L,1021,Camden,0,0,Ground water,Local Government
+NJ1904004,GW,P,31,Sussex,11,6,Ground water,Private
+NJ0806001,SWP,L,6200,Gloucester,0,0,Surface water purchased,Local Government
+NJ1019311,GW,P,1,Hunterdon,0,0,Ground water,Private
+NJ0326001,GW,P,140,Burlington,2,2,Ground water,Private
 NJ1224001,SWP,L,2137,Middlesex,3,1,Surface water purchased,Local Government
-NJ1431002,SWP,L,14,Morris,1,0,Surface water purchased,Local Government
-NJ0326005,GW,P,32,Burlington,11,0,Ground water,Private
-NJ0326003,GW,P,48,Burlington,1,1,Ground water,Private
-NJ0329003,GW,L,542,Burlington,2,1,Ground water,Local Government
-NJ0329009,GWP,L,160,Burlington,2,1,Groundwater purchased,Local Government
-NJ0329004,GW,L,4070,Burlington,2,0,Ground water,Local Government
-NJ0329001,GW,P,51,Burlington,2,1,Ground water,Private
-NJ1417001,GW,L,4815,Morris,1,1,Ground water,Local Government
-NJ0505002,GW,L,9882,Cape May,1,0,Ground water,Local Government
-NJ1715001,GW,L,1390,Salem,4,0,Ground water,Local Government
-NJ1518001,GW,P,552,Ocean,1,0,Ground water,Private
-NJ0705001,SWP,L,9953,Essex,1,1,Surface water purchased,Local Government
-NJ0811002,SWP,L,9567,Gloucester,1,1,Surface water purchased,Local Government
-NJ0436002,GW,P,70,Camden,2,2,Ground water,Private
-NJ0436009,GW,P,70,Camden,1,1,Ground water,Private
-NJ1710006,GW,P,21,Salem,2,1,Ground water,Private
-NJ1511001,GW,L,11000,Ocean,2,0,Ground water,Local Government
-NJ0802001,SWP,L,11014,Gloucester,1,1,Surface water purchased,Local Government
-NJ1514002,SWP,L,8050,Ocean,2,2,Surface water purchased,Local Government
-NJ0902001,SWP,L,300,Hudson,16,0,Surface water purchased,Local Government
-NJ0117001,GW,P,90,Atlantic,1,0,Ground water,Private
-NJ1613002,SWP,L,3668,Passaic,1,0,Surface water purchased,Local Government
-NJ0614004,GW,P,170,Cumberland,1,1,Ground water,Private
-NJ1316001,SWP,L,10284,Monmouth,3,3,Surface water purchased,Local Government
-NJ1309002,SWP,P,227,Monmouth,1,1,Surface water purchased,Private
-NJ1904006,GW,P,35,Sussex,1,0,Ground water,Private
+NJ1431002,SWP,L,14,Morris,0,0,Surface water purchased,Local Government
+NJ0326005,GW,P,32,Burlington,1,1,Ground water,Private
+NJ0326003,GW,P,48,Burlington,3,2,Ground water,Private
+NJ0329003,GW,L,542,Burlington,1,0,Ground water,Local Government
+NJ0329009,GWP,L,160,Burlington,0,0,Groundwater purchased,Local Government
+NJ0329004,GW,L,4070,Burlington,15,0,Ground water,Local Government
+NJ0329001,GW,P,51,Burlington,0,0,Ground water,Private
+NJ1417001,GW,L,4815,Morris,0,0,Ground water,Local Government
+NJ0505002,GW,L,9882,Cape May,20,0,Ground water,Local Government
+NJ1715001,GW,L,1390,Salem,7,0,Ground water,Local Government
+NJ1518001,GW,P,552,Ocean,0,0,Ground water,Private
+NJ0705001,SWP,L,9953,Essex,1,0,Surface water purchased,Local Government
+NJ0811002,SWP,L,9567,Gloucester,5,0,Surface water purchased,Local Government
+NJ0436002,GW,P,70,Camden,1,0,Ground water,Private
+NJ0436009,GW,P,70,Camden,0,0,Ground water,Private
+NJ1710006,GW,P,21,Salem,0,0,Ground water,Private
+NJ1511001,GW,L,11000,Ocean,0,0,Ground water,Local Government
+NJ0802001,SWP,L,11014,Gloucester,0,0,Surface water purchased,Local Government
+NJ1514002,SWP,L,8050,Ocean,1,0,Surface water purchased,Local Government
+NJ0902001,SWP,L,300,Hudson,0,0,Surface water purchased,Local Government
+NJ0117001,GW,P,90,Atlantic,2,0,Ground water,Private
+NJ1613002,SWP,L,3668,Passaic,0,0,Surface water purchased,Local Government
+NJ0614004,GW,P,170,Cumberland,1,0,Ground water,Private
+NJ1316001,SWP,L,10284,Monmouth,0,0,Surface water purchased,Local Government
+NJ1309002,SWP,P,227,Monmouth,0,0,Surface water purchased,Private
+NJ1904006,GW,P,35,Sussex,2,1,Ground water,Private
 NJ0701001,SWP,L,7339,Essex,6,0,Surface water purchased,Local Government
-NJ0901001,SWP,L,11730,Hudson,3,2,Surface water purchased,Local Government
-NJ0412001,GW,L,6120,Camden,1,0,Ground water,Local Government
-NJ1439001,GW,L,2116,Morris,3,0,Ground water,Local Government
-NJ0502001,GW,L,3673,Cape May,2,2,Ground water,Local Government
+NJ0901001,SWP,L,11730,Hudson,0,0,Surface water purchased,Local Government
+NJ0412001,GW,L,6120,Camden,52,0,Ground water,Local Government
+NJ1439001,GW,L,2116,Morris,2,0,Ground water,Local Government
+NJ0502001,GW,L,3673,Cape May,1,0,Ground water,Local Government
 NJ0814001,GW,L,2238,Gloucester,1,1,Ground water,Local Government
-NJ1714003,GW,P,21,Salem,1,0,Ground water,Private
-NJ0112001,GW,L,4611,Atlantic,2,2,Ground water,Local Government
+NJ1714003,GW,P,21,Salem,2,0,Ground water,Private
+NJ0112001,GW,L,4611,Atlantic,0,0,Ground water,Local Government
 NJ0411001,GW,L,1562,Camden,1,0,Ground water,Local Government
-NJ1511010,GW,F,307,Ocean,3,0,Ground water,Federal Government
-NJ0325001,SW,F,1100,Burlington,1,0,Surface water,Federal Government
-NJ1006302,GW,P,1,Hunterdon,17,0,Ground water,Private
-NJ1349001,SWP,L,2317,Monmouth,1,0,Surface water purchased,Local Government
-MD0060206,GW,P,160,Carroll,1,0,Ground water,Private
-NJ1603001,SWP,L,4461,Passaic,2,2,Surface water purchased,Local Government
-NJ1922008,GW,P,206,Sussex,1,1,Ground water,Private
+NJ1511010,GW,F,307,Ocean,0,0,Ground water,Federal Government
+NJ0325001,SW,F,1100,Burlington,1,1,Surface water,Federal Government
+NJ1006302,GW,P,1,Hunterdon,0,0,Ground water,Private
+NJ1349001,SWP,L,2317,Monmouth,0,0,Surface water purchased,Local Government
+MD0060206,GW,P,160,Carroll,0,0,Ground water,Private
+NJ1603001,SWP,L,4461,Passaic,0,0,Surface water purchased,Local Government
+NJ1922008,GW,P,206,Sussex,0,0,Ground water,Private
 NJ1433001,SWP,L,1150,Morris,1,0,Surface water purchased,Local Government
-NJ0320002,GW,P,53,Burlington,1,1,Ground water,Private
-NJ1107001,GW,P,82,Mercer,2,1,Ground water,Private
-NJ0103001,GW,L,6700,Atlantic,1,1,Ground water,Local Government
-NJ0326006,GW,F,3000,Burlington,5,0,Ground water,Federal Government
-NJ1414003,GW,L,1568,Morris,1,0,Ground water,Local Government
-NJ1414016,GW,P,24,Morris,1,0,Ground water,Private
-NJ1414011,GW,L,2490,Morris,1,1,Ground water,Local Government
-NJ0605004,GW,F,18,Cumberland,1,0,Ground water,Federal Government
-NJ1024001,GW,P,82,Hunterdon,1,0,Ground water,Private
+NJ0320002,GW,P,53,Burlington,0,0,Ground water,Private
+NJ1107001,GW,P,82,Mercer,0,0,Ground water,Private
+NJ0103001,GW,L,6700,Atlantic,16,0,Ground water,Local Government
+NJ0326006,GW,F,3000,Burlington,1,0,Ground water,Federal Government
+NJ1414003,GW,L,1568,Morris,16,0,Ground water,Local Government
+NJ1414016,GW,P,24,Morris,2,0,Ground water,Private
+NJ1414011,GW,L,2490,Morris,3,2,Ground water,Local Government
+NJ0605004,GW,F,18,Cumberland,0,0,Ground water,Federal Government
+NJ1024001,GW,P,82,Hunterdon,0,0,Ground water,Private
+NJ0820001,SWP,L,5452,Gloucester,3,0,Surface water purchased,Local Government
+NJ0305001,SW,L,3712,Burlington,4,4,Surface water,Local Government
+NJ1104001,GW,L,1791,Mercer,1,0,Ground water,Local Government
+NJ0340001,GW,L,230,Burlington,1,0,Ground water,Local Government
+NJ1108001,GW,L,968,Mercer,39,0,Ground water,Local Government
+NJ0817001,GW,L,1055,Gloucester,0,0,Ground water,Local Government
+NJ2116002,GW,P,28,Warren,1,0,Ground water,Private
+NJ1438006,GW,P,31,Morris,3,3,Ground water,Private
