@@ -12,9 +12,9 @@ class NegBinModel:
 
         #define the target and predictors 
         self.target = self.df[self.violation_type]
-        self.predictors = self.df[[#"perc_pov", 
-                                      #"perc_POC", 
-                                      #"rural", 
+        self.predictors = self.df[["perc_pov", 
+                                      "perc_POC", 
+                                      "rural", 
                                       "public",
                                       "connections_less_200", 
                                       "gw_or_combined"
@@ -37,15 +37,15 @@ class NegBinModel:
 #         ran the way that provides the alpha for each dataset, recorded alpha below, 
 #         and reran with the method (GLM) that provides an easy way to analyze residuals. .
 # =============================================================================
-        #alpha_data = {"all_violations": [2.8241, 1.2197],
-                      #"health_violations": [3.9016, 1.0463]}
-        #alpha_df = pd.DataFrame(alpha_data, index=['AW_vios.geojson','county_vios.geojson'])
-        #a = alpha_df.loc[self.data, self.violation_type]
+        alpha_data = {"all_violations": [2.8241, 2.8207],
+                      "health_violations": [3.9016, 4.0531]}
+        alpha_df = pd.DataFrame(alpha_data, index=['AW_vios.geojson','county_vios.geojson'])
+        a = alpha_df.loc[self.data, self.violation_type]
         
-        #model = sm.GLM(y,X,family=sm.families.NegativeBinomial(alpha=a))
+        model = sm.GLM(y,X,family=sm.families.NegativeBinomial(alpha=a))
         
         # Method which provides alpha: 
-        model = sm.NegativeBinomial(y,X)
+        #model = sm.NegativeBinomial(y,X)
         return model      
     
     def summarize(self):        
