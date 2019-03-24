@@ -1,6 +1,7 @@
 from violations import StateViolations
 from PWS import PWS
 import get_data as data
+import os
 
 # Identify parameters   
 state = 'NJ'
