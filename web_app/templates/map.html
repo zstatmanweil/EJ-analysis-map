@@ -6,13 +6,21 @@
 		<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 		<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 		<style>
-			body { margin:0; padding:0; }
-			#map { position:absolute; top:105px; bottom:275px; width:100%; }
+			body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
 		</style>
     </head>
 
     <body>
-
+    {% include 'includes/_navbar.html' %}
 		<style>
 		.legend {
 			background-color: #fff;
@@ -23,7 +31,6 @@
 			padding: 10px;
 			position: absolute;
 			right: 10px;
-			bottom: 300px;
 			z-index: 1;
 			}
 		.legend h4 {
@@ -38,9 +45,7 @@
 			}
 		</style>
 
-      <h1>Safe Drinking Water Act (SDWA) Compliance in New Jersey (2012-2016)</h1>
-      <div id='map'></div>
-
+    <div id='map'></div>
 		<div id='all-violations-legend' class='legend'>
 			<h4>SDWA Violations (2012-2016)</h4>
 			<div><span style='background-color: #FFEDA0'></span>5</div>
@@ -103,12 +108,12 @@
 						// Add NJ boundary source
             map.addSource("NJ", {
                 type: "geojson",
-                data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/web/web-display/data/NJ_boundary.geojson'
+                data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/master/web_app/data/NJ_boundary.geojson'
                 });
 						// Add PWS, violation and demographic data source
             map.addSource('aw', {
                 type: 'geojson',
-                data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/web/web-display/data/pws_aw.geojson'
+                data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/master/web_app/data/pws_aw.geojson'
                 });
 						// Add NJ boundary layer
             map.addLayer({
