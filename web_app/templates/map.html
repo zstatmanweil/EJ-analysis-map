@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Spatial environmental justice analysis</title>
+{% extends 'layout.html' %}
+
+{% block head %}
 		<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 		<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 		<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
@@ -12,16 +11,24 @@
       }
       #map {
         position: absolute;
-        top: 0;
+        top: 42pt;
         bottom: 0;
         width: 100%;
       }
-		</style>
+    </style>
+{% endblock %}
     </head>
 
-    <body>
-    {% include 'includes/_navbar.html' %}
+{% block body %}
 		<style>
+    #menu {
+          position: absolute;
+          background: #fff;
+          top: 48pt;
+          padding: 8px;
+          font-family: 'Open Sans', sans-serif;
+        }
+
 		.legend {
 			background-color: #fff;
 			border-radius: 3px;
@@ -43,9 +50,8 @@
 			margin-right: 5px;
 			width: 10px;
 			}
-		</style>
-
-    <div id='map'></div>
+    </style>
+    
 		<div id='all-violations-legend' class='legend'>
 			<h4>SDWA Violations (2012-2016)</h4>
 			<div><span style='background-color: #FFEDA0'></span>5</div>
@@ -55,16 +61,16 @@
 			<div><span style='background-color: #800026'></span>128</div>
 		</div>
 
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.css' type='text/css' />
+    <div id='map'></div>
+
     <div id='menu'>
         <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
         <label for='streets'>streets</label>
         <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
         <label for='satellite'>satellite</label>
     </div>
-
-    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.min.js'></script>
-    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.css' type='text/css' />
-    <div id='map'></div>
 
         <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoienN0YXRtYW53ZWlsIiwiYSI6ImNqbWY3b3V2cjAyMWUzcXBmNXRzdHNnOWEifQ.E-JUGH3ab30ya_NXealg_A';
@@ -147,5 +153,4 @@
               });
         });
         </script>
-	</body>
-</html>
+{% endblock %}
