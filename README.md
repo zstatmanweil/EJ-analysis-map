@@ -21,8 +21,8 @@ I am conducting the same type of spatial environmental justice analysis I did fo
 - [ ] Etimate the population and the public water systems' sociodemographic characteristics within each water system through **dasymetric mapping**. Create maps to visualize the results.
   - *In progress:* [`spatial_analysis/dasymetric.ipynb`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/spatial_analysis/dasymetric.ipynb)
 - [ ] Make the areal weighting and dasymetric processes reproducible through a chain of Python scripts.
-- [ ] Conduct a statistical analysis of the results to determine the correlation, if any, between the EJ variables and the SDWA violations. The negative binomial regression code I created for the Pennsylvania data can be found here: 
-  - [`NegBinomialModel`](https://github.com/zstatmanweil/NegBinomialModel) 
+- [x] Conduct a statistical analysis of the results to determine the correlation, if any, between the EJ variables and the SDWA violations. The negative binomial regression code I created for the Pennsylvania data can be found here: 
+  - [`regression`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/regressionl) 
 - [ ] Get the map  and statistical results on the web!
   - *In progress:* [`web_app`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/web_app)
 
