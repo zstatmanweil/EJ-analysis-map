@@ -15,10 +15,12 @@ data/Census/
 data/Created/SpatialAnalysis/.ipynb_checkpoints/
 data/Created/SpatialAnalysis/.vscode/
 data/TIGER/
+data/NJDEP
 regression/.ipynb_checkpoints/
 regression/.main.py.swp
 regression/__pycache__/
 spatial_analysis/.ipynb_checkpoints/
 web_app/data/.ipynb_checkpoints/
 web_app/data/working/
+tl_2016_us_uac10*
     
