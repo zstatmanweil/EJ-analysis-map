@@ -86,10 +86,11 @@
         var map = new mapboxgl.Map({
 	        container: 'map',
           style: 'mapbox://styles/mapbox/streets-v11',
-	   	    center: [-74.385210, 40.118365], // long, lat
-          zoom: 6.3,
+          center: [-74.385210, 40.118365], // long, lat
+          zoom: 7,
         //    maxBounds: bounds // Sets bounds as max
         });
+        
         // Toggle between styles
         var layerList = document.getElementById('menu');
         var inputs = layerList.getElementsByTagName('input');
@@ -116,11 +117,6 @@
                 type: "geojson",
                 data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/master/web_app/data/NJ_boundary.geojson'
                 });
-						// Add PWS, violation and demographic data source
-            map.addSource('aw', {
-                type: 'geojson',
-                data: 'https://raw.githubusercontent.com/zstatmanweil/EJ-analysis-map/master/web_app/data/pws_aw.mbtiles'
-                });
 						// Add NJ boundary layer
             map.addLayer({
                'id': 'new_jersey',
@@ -131,26 +127,50 @@
                    'line-color': '#070705'
                 }
             });
-						// Add PWS, violation and demographic data layer
+            // Add PWS, violation and demographic data source
             map.addLayer({
-                'id': 'aw_pws',
-                'type': 'fill',
-                'source': 'aw',
-                'paint': {
-                     'fill-color': {
-                       'property': 'all_violations',
-                       'stops': [
-                         [vioBreaks[0], vioColors[0]],
-                         [vioBreaks[1], vioColors[1]],
-                         [vioBreaks[2], vioColors[2]],
-												 [vioBreaks[3], vioColors[3]],
-                         [vioBreaks[4], vioColors[4]],
-                       ]
-                       },
-                      'fill-opacity': 0.9,
-											'fill-outline-color': '#070705'
-                  }
+              'id': 'aw_pws',
+              'type': 'fill',
+              "source": {
+                type: 'vector',
+                url: 'mapbox://zstatmanweil.01gjua4s'
+              },
+              "source-layer": "pws_aw",
+              'paint': {
+                    'fill-color': {
+                      'property': 'all_violations',
+                      'stops': [
+                        [vioBreaks[0], vioColors[0]],
+                        [vioBreaks[1], vioColors[1]],
+                        [vioBreaks[2], vioColors[2]],
+                        [vioBreaks[3], vioColors[3]],
+                        [vioBreaks[4], vioColors[4]],
+                      ]
+                      },
+                    'fill-opacity': 0.9,
+                    'fill-outline-color': '#6d6d51'
+                }
               });
+						// Add PWS, violation and demographic data layer
+            // map.addLayer({
+            //     'id': 'aw_pws',
+            //     'type': 'fill',
+            //     'source': 'aw',
+            //     'paint': {
+            //          'fill-color': {
+            //            'property': 'all_violations',
+            //            'stops': [
+            //              [vioBreaks[0], vioColors[0]],
+            //              [vioBreaks[1], vioColors[1]],
+            //              [vioBreaks[2], vioColors[2]],
+						// 						 [vioBreaks[3], vioColors[3]],
+            //              [vioBreaks[4], vioColors[4]],
+            //            ]
+            //            },
+            //           'fill-opacity': 0.9,
+						// 					'fill-outline-color': '#070705'
+            //       }
+            //   });
         });
         </script>
 {% endblock %}
