@@ -63,6 +63,18 @@
       background: #3074a4;
       }
 
+    .feature {
+			background-color: #fff;
+			border-radius: 3px;
+			bottom: 300px;
+			box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+			font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+			padding: 10px;
+			position: absolute;
+			right: 10px;
+			z-index: 1;
+			}
+
 		.legend {
 			background-color: #fff;
 			border-radius: 3px;
@@ -84,7 +96,11 @@
 			margin-right: 5px;
 			width: 10px;
 			}
+      
     </style>
+    <div id='hover' class='feature'>
+			<h4>Hover over a water system!</h2>
+    </div>
     
 		<div id='all-violations-legend' class='legend'>
 			<h4>SDWA Violations (2012-2016)</h4>
@@ -122,7 +138,7 @@
         // Percent below the poverty line (areal weighting)
         var percPovBreaks = [0.05, 0.09, 0.14, 0.24, 0.47];
         // Percent below the poverty line (county-level analysis)
-        var percPOCBreaksCounty = [20, 35, 45, 55, 71]; // need to update
+        var percPOCBreaksCounty = [20.0, 35.0, 45.0, 55.0, 71.0]; // need to update
         // Percent below the poverty line (county-level analysis)
         var percPovBreaksCounty = [6, 9, 12, 14, 17]; // need to update
 
@@ -184,6 +200,9 @@
                 type: 'vector',
                 url: 'mapbox://zstatmanweil.01gjua4s'
               },
+              'layout': {
+                'visibility': 'none'
+                },
               "source-layer": "pws_aw",
                 'paint': {
                      'fill-color': {
@@ -208,6 +227,9 @@
                 type: 'vector',
                 url: 'mapbox://zstatmanweil.01gjua4s'
               },
+              'layout': {
+                'visibility': 'none'
+                },
               "source-layer": "pws_aw",
                 'paint': {
                      'fill-color': {
@@ -232,6 +254,9 @@
                 type: 'vector',
                 url: 'mapbox://zstatmanweil.01gjua4s'
               },
+              'layout': {
+                'visibility': 'none'
+                },
               "source-layer": "pws_aw",
               'paint': {
                     'fill-color': {
@@ -256,6 +281,9 @@
                 type: 'vector',
                 url: 'mapbox://zstatmanweil.01gjua4s'
               },
+              'layout': {
+                'visibility': 'none'
+                },
               "source-layer": "pws_aw",
                 'paint': {
                      'fill-color': {
@@ -274,64 +302,70 @@
               });
             
             // Add percent below the poverty line (county-level analysis)
-            // map.addLayer({
-            //   'id': 'perc_pov_county',
-            //   'type': 'fill',
-            //   "source": {
-            //     type: 'vector',
-            //     url: 'zstatmanweil.1vd9qjbs'
-            //   },
-            //   "source-layer": "pws_county-8ry2w7",
-            //     'paint': {
-            //          'fill-color': {
-            //            'property': 'perc_pov',
-            //            'stops': [
-            //              [percPovBreaksCounty[0], demoColors[0]],
-            //              [percPovBreaksCounty[1], demoColors[1]],
-            //              [percPovBreaksCounty[2], demoColors[2]],
-						// 						 [percPovBreaksCounty[3], demoColors[3]],
-            //              [percPovBreaksCounty[4], demoColors[4]],
-            //            ]
-            //            },
-            //           'fill-opacity': 0.9,
-						// 					'fill-outline-color': '#6d6d51'
-            //       }
-            //   });
-            // // Add percent POC (county-level analysis)
-            // map.addLayer({
-            //   'id': 'perc_POC_county',
-            //   'type': 'fill',
-            //   "source": {
-            //     type: 'vector',
-            //     url: 'zstatmanweil.1vd9qjbs'
-            //   },
-            //   "source-layer": "pws_county-8ry2w7",
-            //     'paint': {
-            //          'fill-color': {
-            //            'property': 'perc_POC',
-            //            'stops': [
-            //              [percPOCBreaksCounty[0], demoColors[0]],
-            //              [percPOCBreaksCounty[1], demoColors[1]],
-            //              [percPOCBreaksCounty[2], demoColors[2]],
-						// 						 [percPOCBreaksCounty[3], demoColors[3]],
-            //              [percPOCBreaksCounty[4], demoColors[4]],
-            //            ]
-            //            },
-            //           'fill-opacity': 0.9,
-						// 					'fill-outline-color': '#6d6d51'
-            //       }
-            //   });
+            map.addLayer({
+              'id': 'perc_pov_county',
+              'type': 'fill',
+              "source": {
+                type: 'vector',
+                url: 'mapbox://zstatmanweil.8q8hf0qi'
+              },
+              'layout': {
+                'visibility': 'none'
+                },
+              "source-layer": "pws_county",
+                'paint': {
+                     'fill-color':  {
+                       'property': 'perc_pov',
+                       'stops': [
+                         [percPovBreaksCounty[0], demoColors[0]],
+                         [percPovBreaksCounty[1], demoColors[1]],
+                         [percPovBreaksCounty[2], demoColors[2]],
+												 [percPovBreaksCounty[3], demoColors[3]],
+                         [percPovBreaksCounty[4], demoColors[4]],
+                       ]
+                       },
+                      'fill-opacity': 0.9,
+											'fill-outline-color': '#6d6d51'
+                  }
+              });
+            // Add percent POC (county-level analysis)
+            map.addLayer({
+              'id': 'perc_POC_county',
+              'type': 'fill',
+              "source": {
+                type: 'vector',
+                url: 'mapbox://zstatmanweil.8q8hf0qi'
+              },
+              'layout': {
+                'visibility': 'none'
+                },
+              "source-layer": "pws_county",
+                'paint': {
+                     'fill-color': {
+                       'property': 'perc_POC',
+                       'stops': [
+                         [percPOCBreaksCounty[0], demoColors[0]],
+                         [percPOCBreaksCounty[1], demoColors[1]],
+                         [percPOCBreaksCounty[2], demoColors[2]],
+												 [percPOCBreaksCounty[3], demoColors[3]],
+                         [percPOCBreaksCounty[4], demoColors[4]],
+                       ]
+                       },
+                      'fill-opacity': 0.9,
+											'fill-outline-color': '#6d6d51'
+                  }
+              });
         });
 
         // Toggle between layers
-        var toggleableLayerIds = [ 'Total SDWA Violations', 'Health-based SDWA Violations', 'perc_POC_aw', 'perc_pov_aw' ];
+        var toggleableLayerIds = [ 'Total SDWA Violations', 'Health-based SDWA Violations', 'perc_POC_aw', 'perc_pov_aw', 'perc_pov_county', 'perc_POC_county' ];
  
         for (var i = 0; i < toggleableLayerIds.length; i++) {
           var id = toggleableLayerIds[i];
         
           var link = document.createElement('a');
           link.href = '#';
-          link.className = 'active';
+          link.className = '';
           link.textContent = id;
           
           link.onclick = function (e) {
@@ -353,6 +387,5 @@
         var layers = document.getElementById('menu');
         layers.appendChild(link);
         }
- 
         </script>
 {% endblock %}
