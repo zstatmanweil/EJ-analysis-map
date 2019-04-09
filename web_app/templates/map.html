@@ -22,12 +22,46 @@
 {% block body %}
 		<style>
     #menu {
-          position: absolute;
-          background: #fff;
-          top: 48pt;
-          padding: 8px;
-          font-family: 'Open Sans', sans-serif;
-        }
+      background: #fff;
+      position: absolute;
+      z-index: 1;
+      top: 50pt;
+      left: 10pt;
+      border-radius: 3px;
+      width: 120px;
+      border: 1px solid rgba(0,0,0,0.4);
+      font-family: 'Open Sans', sans-serif;
+      }
+
+    #menu a {
+      font-size: 13px;
+      color: #404040;
+      display: block;
+      margin: 0;
+      padding: 0;
+      padding: 10px;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,0,0,0.25);
+      text-align: center;
+      }
+      
+    #menu a:last-child {
+      border: none;
+      }
+    
+    #menu a:hover {
+      background-color: #f8f8f8;
+      color: #404040;
+      }
+    
+    #menu a.active {
+      background-color: #3887be;
+      color: #ffffff;
+      }
+    
+    #menu a.active:hover {
+      background: #3074a4;
+      }
 
 		.legend {
 			background-color: #fff;
@@ -65,18 +99,33 @@
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.css' type='text/css' />
     <div id='map'></div>
 
-    <div id='menu'>
+    <nav id="menu"></nav>
+    <!-- <div id='style_menu'>
         <input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
         <label for='streets'>streets</label>
         <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
         <label for='satellite'>satellite</label>
-    </div>
+    </div> -->
 
         <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoienN0YXRtYW53ZWlsIiwiYSI6ImNqbWY3b3V2cjAyMWUzcXBmNXRzdHNnOWEifQ.E-JUGH3ab30ya_NXealg_A';
-				// Add lists for choropleth
+				
+        // Add lists for choropleth
         var vioColors = ['#FFEDA0',  '#FEB24C',  '#FC4E2A', '#BD0026', '#800026'];
+        var demoColors = ['#d0c2d6',  '#b69bc1',  '#805591', '#501966', '#2a0738']; // update
+        // All violations
         var vioBreaks = [5, 15, 35, 65, 128];
+        // Health violations
+        var healthVioBreaks = [1, 2, 4, 5, 10]; // need to update
+        // Percent below the poverty line (areal weighting)
+        var percPOCBreaks = [0.12, 0.20, 0.32, 0.54, 0.98];
+        // Percent below the poverty line (areal weighting)
+        var percPovBreaks = [0.05, 0.09, 0.14, 0.24, 0.47];
+        // Percent below the poverty line (county-level analysis)
+        var percPOCBreaksCounty = [20, 35, 45, 55, 71]; // need to update
+        // Percent below the poverty line (county-level analysis)
+        var percPovBreaksCounty = [6, 9, 12, 14, 17]; // need to update
+
         // Set bounds
         var bounds = [
             [-125.339515, 23.089636], // Southwest Coordinates
@@ -92,15 +141,15 @@
         });
         
         // Toggle between styles
-        var layerList = document.getElementById('menu');
-        var inputs = layerList.getElementsByTagName('input');
-        function switchLayer(layer) {
-            var layerId = layer.target.id;
-            map.setStyle('mapbox://styles/mapbox/' + layerId);
-        }
-        for (var i = 0; i < inputs.length; i++) {
-            inputs[i].onclick = switchLayer;
-        }
+        // var layerList = document.getElementById('style_menu');
+        // var inputs = layerList.getElementsByTagName('input');
+        // function switchLayer(layer) {
+        //     var layerId = layer.target.id;
+        //     map.setStyle('mapbox://styles/mapbox/' + layerId);
+        // }
+        // for (var i = 0; i < inputs.length; i++) {
+        //     inputs[i].onclick = switchLayer;
+        // }
         // Add Geocoder
         map.addControl(new MapboxGeocoder({
             accessToken: mapboxgl.accessToken
@@ -127,9 +176,57 @@
                    'line-color': '#070705'
                 }
             });
-            // Add PWS, violation and demographic data source
+            // Add percent below the poverty line (areal weighting)
             map.addLayer({
-              'id': 'all_violations',
+              'id': 'perc_pov_aw',
+              'type': 'fill',
+              "source": {
+                type: 'vector',
+                url: 'mapbox://zstatmanweil.01gjua4s'
+              },
+              "source-layer": "pws_aw",
+                'paint': {
+                     'fill-color': {
+                       'property': 'perc_pov',
+                       'stops': [
+                         [percPovBreaks[0], demoColors[0]],
+                         [percPovBreaks[1], demoColors[1]],
+                         [percPovBreaks[2], demoColors[2]],
+												 [percPovBreaks[3], demoColors[3]],
+                         [percPovBreaks[4], demoColors[4]],
+                       ]
+                       },
+                      'fill-opacity': 0.9,
+											'fill-outline-color': '#6d6d51'
+                  }
+              });
+            // Add percent POC (areal weighting)
+            map.addLayer({
+              'id': 'perc_POC_aw',
+              'type': 'fill',
+              "source": {
+                type: 'vector',
+                url: 'mapbox://zstatmanweil.01gjua4s'
+              },
+              "source-layer": "pws_aw",
+                'paint': {
+                     'fill-color': {
+                       'property': 'perc_POC',
+                       'stops': [
+                         [percPOCBreaks[0], demoColors[0]],
+                         [percPOCBreaks[1], demoColors[1]],
+                         [percPOCBreaks[2], demoColors[2]],
+												 [percPOCBreaks[3], demoColors[3]],
+                         [percPOCBreaks[4], demoColors[4]],
+                       ]
+                       },
+                      'fill-opacity': 0.9,
+											'fill-outline-color': '#6d6d51'
+                  }
+              });
+            // Add health violation data layer
+            map.addLayer({
+              'id': 'Health-based SDWA Violations',
               'type': 'fill',
               "source": {
                 type: 'vector',
@@ -138,39 +235,124 @@
               "source-layer": "pws_aw",
               'paint': {
                     'fill-color': {
-                      'property': 'all_violations',
+                      'property': 'health_violations',
                       'stops': [
-                        [vioBreaks[0], vioColors[0]],
-                        [vioBreaks[1], vioColors[1]],
-                        [vioBreaks[2], vioColors[2]],
-                        [vioBreaks[3], vioColors[3]],
-                        [vioBreaks[4], vioColors[4]],
+                        [healthVioBreaks[0], vioColors[0]], // need to update these
+                        [healthVioBreaks[1], vioColors[1]],
+                        [healthVioBreaks[2], vioColors[2]],
+                        [healthVioBreaks[3], vioColors[3]],
+                        [healthVioBreaks[4], vioColors[4]],
                       ]
                       },
                     'fill-opacity': 0.9,
                     'fill-outline-color': '#6d6d51'
                 }
               });
-						// Add PWS, violation and demographic data layer
+						// Add all violations
+            map.addLayer({
+              'id': 'Total SDWA Violations',
+              'type': 'fill',
+              "source": {
+                type: 'vector',
+                url: 'mapbox://zstatmanweil.01gjua4s'
+              },
+              "source-layer": "pws_aw",
+                'paint': {
+                     'fill-color': {
+                       'property': 'all_violations',
+                       'stops': [
+                         [vioBreaks[0], vioColors[0]],
+                         [vioBreaks[1], vioColors[1]],
+                         [vioBreaks[2], vioColors[2]],
+												 [vioBreaks[3], vioColors[3]],
+                         [vioBreaks[4], vioColors[4]],
+                       ]
+                       },
+                      'fill-opacity': 0.9,
+											'fill-outline-color': '#6d6d51'
+                  }
+              });
+            
+            // Add percent below the poverty line (county-level analysis)
             // map.addLayer({
-            //     'id': 'aw_pws',
-            //     'type': 'fill',
-            //     'source': 'aw',
+            //   'id': 'perc_pov_county',
+            //   'type': 'fill',
+            //   "source": {
+            //     type: 'vector',
+            //     url: 'zstatmanweil.1vd9qjbs'
+            //   },
+            //   "source-layer": "pws_county-8ry2w7",
             //     'paint': {
             //          'fill-color': {
-            //            'property': 'all_violations',
+            //            'property': 'perc_pov',
             //            'stops': [
-            //              [vioBreaks[0], vioColors[0]],
-            //              [vioBreaks[1], vioColors[1]],
-            //              [vioBreaks[2], vioColors[2]],
-						// 						 [vioBreaks[3], vioColors[3]],
-            //              [vioBreaks[4], vioColors[4]],
+            //              [percPovBreaksCounty[0], demoColors[0]],
+            //              [percPovBreaksCounty[1], demoColors[1]],
+            //              [percPovBreaksCounty[2], demoColors[2]],
+						// 						 [percPovBreaksCounty[3], demoColors[3]],
+            //              [percPovBreaksCounty[4], demoColors[4]],
             //            ]
             //            },
             //           'fill-opacity': 0.9,
-						// 					'fill-outline-color': '#070705'
+						// 					'fill-outline-color': '#6d6d51'
+            //       }
+            //   });
+            // // Add percent POC (county-level analysis)
+            // map.addLayer({
+            //   'id': 'perc_POC_county',
+            //   'type': 'fill',
+            //   "source": {
+            //     type: 'vector',
+            //     url: 'zstatmanweil.1vd9qjbs'
+            //   },
+            //   "source-layer": "pws_county-8ry2w7",
+            //     'paint': {
+            //          'fill-color': {
+            //            'property': 'perc_POC',
+            //            'stops': [
+            //              [percPOCBreaksCounty[0], demoColors[0]],
+            //              [percPOCBreaksCounty[1], demoColors[1]],
+            //              [percPOCBreaksCounty[2], demoColors[2]],
+						// 						 [percPOCBreaksCounty[3], demoColors[3]],
+            //              [percPOCBreaksCounty[4], demoColors[4]],
+            //            ]
+            //            },
+            //           'fill-opacity': 0.9,
+						// 					'fill-outline-color': '#6d6d51'
             //       }
             //   });
         });
+
+        // Toggle between layers
+        var toggleableLayerIds = [ 'Total SDWA Violations', 'Health-based SDWA Violations', 'perc_POC_aw', 'perc_pov_aw' ];
+ 
+        for (var i = 0; i < toggleableLayerIds.length; i++) {
+          var id = toggleableLayerIds[i];
+        
+          var link = document.createElement('a');
+          link.href = '#';
+          link.className = 'active';
+          link.textContent = id;
+          
+          link.onclick = function (e) {
+            var clickedLayer = this.textContent;
+            e.preventDefault();
+            e.stopPropagation();
+        
+            var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+        
+            if (visibility === 'visible') {
+              map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+              this.className = '';
+            } else {
+              this.className = 'active';
+              map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+            }
+        };
+        
+        var layers = document.getElementById('menu');
+        layers.appendChild(link);
+        }
+ 
         </script>
 {% endblock %}
