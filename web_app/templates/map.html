@@ -97,11 +97,11 @@
     </style>
 
     <div class='map-overlay' id='features'>
-			<h6>Hover over a water system!</h6>
+			<div id='pd'><p>Select a layer!</p></div>
     </div>
     
 		<div class='map-overlay' id='legend'>
-      <h6>Legend!</h6>
+      <h6>Legend</h6>
     </div>
 
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.min.js'></script>
@@ -146,15 +146,15 @@
             // Health violations
             var healthVioBreaks = [1, 2, 4, 5, 10]; // need to update
             // Percent below the poverty line (areal weighting) 
-            var percPOCBreaks = [0.12, 0.20, 0.32, 0.54, 0.98];
-            var percPOCBreaksDisplay = [12, 20, 32, 54, 98];
+            var percPOCBreaks = [0.15, 0.28, 0.46, 0.69, 0.98];
+            var percPOCBreaksDisplay = [15, 28, 46, 69, 98];
             // Percent below the poverty line (areal weighting)
-            var percPovBreaks = [0.05, 0.09, 0.14, 0.24, 0.47];
-            var percPovBreaksDisplay = [5, 9, 14, 24, 47];
+            var percPovBreaks = [0.05, 0.08, 0.14, 0.24, 0.47];
+            var percPovBreaksDisplay = [5, 8, 14, 24, 47];
             // Percent below the poverty line (county-level analysis)
-            var percPOCBreaksCounty = [20.0, 35.0, 45.0, 55.0, 71.0]; // need to update
+            var percPOCBreaksCounty = [21, 32, 49, 59, 71]; // need to update
             // Percent below the poverty line (county-level analysis)
-            var percPovBreaksCounty = [6, 9, 12, 14, 17]; // need to update
+            var percPovBreaksCounty = [5, 8, 11, 15, 17]; // need to update
 
             mapReset();
 						// Add NJ boundary source
@@ -377,6 +377,7 @@
               for (var j = 0; j < a.length; j++) {
                   var elem = a[j];
                   elem.className = '';
+                  map.setLayoutProperty(elem.textContent, 'visibility', 'none');
               }
     
               // Turn on selected layer
@@ -415,7 +416,22 @@
                 item.appendChild(value);
                 legend.appendChild(item);
               };
-            };
+              
+              //Add hover
+              map.on('mousemove', 'Total SDWA Violations', function(e) {
+                var pws = map.querySourceFeatures(e.point, 'mapbox://zstatmanweil.01gjua4s', 
+                {
+                  "source-layer": "pws_aw"
+                })
+
+                console.log(pws[0])
+              if (pws.length > 0) {
+                document.getElementById('pd').innerHTML = '<h3><strong> PWSID: ' + pws[0].properties.PWID + '</strong></h3><p><strong><em>' + pws[0].properties.all_violations + '</strong></em></p>';
+              } else {
+                document.getElementById('pd').innerHTML = '<p>Working!</p>';
+              }
+            });
+          };
         };
         
         var layers = document.getElementById('menu');
