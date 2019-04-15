@@ -21,6 +21,13 @@
 
 {% block body %} 
     <style>
+
+p {
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/***** Layger Toggle *****/
 #menu {
     background: #fff;
     position: absolute;
@@ -30,7 +37,7 @@
     border-radius: 3px;
     width: 150px;
     border: 1px solid rgba(0,0,0,0.4);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
     }
 
 #menu a {
@@ -64,13 +71,14 @@
     /* background: #3074a4; */
     }
 
+/***** Hover Box / Legend *****/
 .map-overlay {
   position: absolute;
   right: 10px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 3px;
   padding: 10px;
-  font-family: Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   overflow: auto;
   border-radius: 3px;
   z-index: 1;
@@ -78,13 +86,13 @@
 
 #features {
   bottom: 300px;
-  font: 20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font: 20px;
   }
 
 #legend {
   background-color: #fff;
-  bottom: 30px;
-  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  bottom: 4%;
+  font: 18px/20px;
   }
 
 .legend-key {
@@ -97,11 +105,11 @@
     </style>
 
     <div class='map-overlay' id='features'>
-			<div id='pd'><p>Select a layer!</p></div>
+			<div id='pd'><h5>Select a layer!</h5></div>
     </div>
     
 		<div class='map-overlay' id='legend'>
-      <h6>Legend</h6>
+      <h5>Legend</h5>
     </div>
 
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v3.1.4/mapbox-gl-geocoder.min.js'></script>
@@ -144,7 +152,7 @@
             // All violations
             var vioBreaks = [5, 15, 35, 65, 128];
             // Health violations
-            var healthVioBreaks = [1, 2, 4, 5, 10]; // need to update
+            var healthVioBreaks = [1, 2, 4, 5, 10]; 
             // Percent below the poverty line (areal weighting) 
             var percPOCBreaks = [0.15, 0.28, 0.46, 0.69, 0.98];
             var percPOCBreaksDisplay = [15, 28, 46, 69, 98];
@@ -152,9 +160,9 @@
             var percPovBreaks = [0.05, 0.08, 0.14, 0.24, 0.47];
             var percPovBreaksDisplay = [5, 8, 14, 24, 47];
             // Percent below the poverty line (county-level analysis)
-            var percPOCBreaksCounty = [21, 32, 49, 59, 71]; // need to update
+            var percPOCBreaksCounty = [21, 32, 49, 59, 71]; 
             // Percent below the poverty line (county-level analysis)
-            var percPovBreaksCounty = [5, 8, 11, 15, 17]; // need to update
+            var percPovBreaksCounty = [5, 8, 11, 15, 17]; 
 
             mapReset();
 						// Add NJ boundary source
@@ -188,7 +196,7 @@
                     'fill-color': {
                       'property': 'health_violations',
                       'stops': [
-                        [healthVioBreaks[0], vioColors[0]], // need to update these
+                        [healthVioBreaks[0], vioColors[0]], 
                         [healthVioBreaks[1], vioColors[1]],
                         [healthVioBreaks[2], vioColors[2]],
                         [healthVioBreaks[3], vioColors[3]],
@@ -401,7 +409,20 @@
               var breaks = breakNames[i];
               
 
-              // Add legend 
+              // Add legend
+                var legend = document.getElementById('legend');
+                var item = document.createElement('div');
+                var key = document.createElement('span');
+                key.className = 'map-overlay';
+                key.id = 'legend';
+
+                var value = document.createElement('span');
+                value.innerHTML = clickedLayer;
+                item.appendChild(key);
+                item.appendChild(value);
+                legend.appendChild(item);
+
+              // Create Key 
               for (i = 0; i < breaks.length; i++) {
                 var layer = breaks[i];
                 var color = colors[i];
@@ -417,24 +438,32 @@
                 legend.appendChild(item);
               };
               
-              //Add hover
-              map.on('mousemove', 'Total SDWA Violations', function(e) {
-                var pws = map.querySourceFeatures(e.point, 'mapbox://zstatmanweil.01gjua4s', 
-                {
-                  "source-layer": "pws_aw"
+              // Add hover with information about public water system under mouse
+              // Identify type of data being shown
+              if (clickedLayer === 'Total SDWA Violations'){
+                var type = 'total SDWA violations';
+              } else if (clickedLayer === 'Health-based SDWA Violations') {
+                var type = 'health-based SDWA violations';
+              } else {
+                var type = '%';
+              }
+
+              map.on('mousemove', clickedLayer, function(e) {
+                var pws = map.queryRenderedFeatures(e.point, {
+                  layers: [clickedLayer]
                 })
 
-                console.log(pws[0])
-              if (pws.length > 0) {
-                document.getElementById('pd').innerHTML = '<h3><strong> PWSID: ' + pws[0].properties.PWID + '</strong></h3><p><strong><em>' + pws[0].properties.all_violations + '</strong></em></p>';
-              } else {
-                document.getElementById('pd').innerHTML = '<p>Working!</p>';
-              }
-            });
+                if (pws) {
+                  document.getElementById('pd').innerHTML = '<h5> PWS ID: ' + pws[0].properties.PWID + '</h5><p><em>' + pws[0].properties.all_violations + ' ' + type + '</em></p>';
+                } else {
+                  document.getElementById('pd').innerHTML = '<p>Hover over a water system</p>';
+                }
+              });
           };
         };
         
         var layers = document.getElementById('menu');
+        console.log(layers)
         layers.appendChild(link);
         }   
 
