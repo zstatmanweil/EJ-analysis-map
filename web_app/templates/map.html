@@ -4,106 +4,11 @@
 		<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-    <style>
-			body {
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        position: absolute;
-        top: 42pt;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
+    <link href='/static/mapstyle.css' rel='stylesheet'/>
 {% endblock %}
     </head>
 
 {% block body %} 
-    <style>
-
-p {
-  font-size: 15px;
-  font-family: 'Oswald', sans-serif;
-}
-
-/***** Layger Toggle *****/
-#menu {
-    background: #fff;
-    position: absolute;
-    z-index: 1;
-    top: 50pt;
-    left: 10pt;
-    border-radius: 3px;
-    width: 150px;
-    border: 1px solid rgba(0,0,0,0.4);
-    font-family: 'Oswald', sans-serif;
-    }
-
-#menu a {
-    font-size: 13px;
-    color: #404040;
-    display: block;
-    margin: 0;
-    padding: 0;
-    padding: 10px;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(0,0,0,0.25);
-    text-align: center;
-    }
-    
-#menu a:last-child {
-    border: none;
-    }
-  
-#menu a:hover {
-    background-color: #f8f8f8;
-    color: #404040;
-    }
-  
-#menu a.active {
-    background-color: #14a9e0;
-    color: #ffffff;
-    }
-  
-#menu a.active:hover {
-    background:  #14a9e0;
-    /* background: #3074a4; */
-    }
-
-/***** Hover Box / Legend *****/
-.map-overlay {
-  position: absolute;
-  right: 10px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 3px;
-  padding: 10px;
-  font-family: 'Oswald', sans-serif;
-  overflow: auto;
-  border-radius: 3px;
-  z-index: 1;
-}
-
-#features {
-  bottom: 300px;
-  font: 20px;
-  }
-
-#legend {
-  background-color: #fff;
-  bottom: 4%;
-  font: 18px/20px;
-  }
-
-.legend-key {
-  display: inline-block;
-  border-radius: 20%;
-  width: 10px;
-  height: 10px;
-  margin-right: 5px;
-}      
-    </style>
-
     <div class='map-overlay' id='features'>
 			<div id='pd'><h5>Select a layer!</h5></div>
     </div>
