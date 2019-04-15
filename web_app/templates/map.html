@@ -357,18 +357,16 @@
                 var pws = map.queryRenderedFeatures(e.point, {
                   layers: [clickedLayer]
                 })
-
-                if (pws) {
-                  document.getElementById('pd').innerHTML = '<h5> PWS ID: ' + pws[0].properties.PWID + '</h5><p><em>' + pws[0].properties.all_violations + ' ' + type + '</em></p>';
-                } else {
-                  document.getElementById('pd').innerHTML = '<p>Hover over a water system</p>';
-                }
+                document.getElementById('pd').innerHTML = '<h5> PWS ID: ' + pws[0].properties.PWID + '</h5><p><em>' + pws[0].properties.all_violations + ' ' + type + '</em></p>';
               });
+              map.on('mouseleave', clickedLayer, function(e) {
+                document.getElementById('pd').innerHTML = '<p>Hover over a water system</p>';
+              });
+
           };
         };
         
         var layers = document.getElementById('menu');
-        console.log(layers)
         layers.appendChild(link);
         }   
 

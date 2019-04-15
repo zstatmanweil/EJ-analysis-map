@@ -77,12 +77,15 @@ p {
 #features {
     bottom: 300px;
     font: 20px;
+    width: 20rem;
+    height: 6rem;
 }
 
 #legend {
     background-color: #fff;
     bottom: 4%;
     font: 18px/20px;
+    width: 20rem;
 }
 
 .legend-key {
