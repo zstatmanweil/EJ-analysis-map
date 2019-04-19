@@ -1,0 +1,24 @@
+.home-container {
+    color: #111010;
+    background-color: #cfcff3;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+    }
+
+/*** Body ****/
+body {
+    background-color: #aaabf1;
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-size: 11pt;
+}
+
+/***** Navbar *****/
+/* .navbar-nav {
+    font-family: 'Oswald', sans-serif;
+} */
