@@ -14,7 +14,7 @@ def map():
 
 @app.route('/results')
 def results():
-    return render_template("home.html")
+    return render_template("results.html")
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
