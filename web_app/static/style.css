@@ -1,6 +1,6 @@
 .home-container {
     color: #111010;
-    background-color: #cfcff3;
+    background-color: #dcdce7;
     margin-top: 15pt;
     margin-bottom: 15pt;
     margin-left: 5%;
@@ -21,9 +21,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/static/img/cupwater.jpg');
+    background-size: 100%;
+    /* background-color: #6060a7; */
+    background-image: url('/static/img/water.jpg');
     background-attachment: fixed;
-    opacity: 0.5;
+    background-repeat: no-repeat;
+    opacity: 0.7;
     filter:alpha(opacity=80);
     z-index: -1;
 }
