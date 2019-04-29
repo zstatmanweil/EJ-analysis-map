@@ -14,7 +14,7 @@ class NegBinModel:
         self.target = self.df[self.violation_type]
         self.predictors = self.df[["perc_pov", 
                                       "perc_POC", 
-                                      "rural", 
+                                      #"rural", 
                                       "public",
                                       "connections_less_200", 
                                       "gw_or_combined"

@@ -9,16 +9,16 @@ import matplotlib.pyplot as plt
 os.chdir('../data/Created/SpatialAnalysis')
 
 # Select the dataset
-data = 'AW_vios.geojson'
-#data = 'county_vios.geojson'
+#data = 'AW_vios.geojson'
+data = 'county_vios.geojson'
 
 # Read relevant file and confert to pandas DataFrame
 gpddf = gpd.read_file(data).drop(columns='geometry')
 df = pd.DataFrame(gpddf)
 
 # Select violation data of interest
-#vio_data = "all_violations"
-vio_data = "health_violations"
+vio_data = "all_violations"
+#vio_data = "health_violations"
 
 # Add dummy variables
 new_df = Variables(df)

@@ -2,13 +2,116 @@
 
 {% block body %}
 <div class="home-container">
+    <h4>Total SDWA Violations</h4>
+    <p>The tables below show whether the covariates had a significant positive relationship ("pos"), significant negative relationship ("neg") or no 
+        relationship to the total and/or health-based SDWA violations. The results show very few of the covariates had a statistically significant relationship
+        the SDWA violations. 
+    </p>
+</div>
 
-    <div class="summary">
-        <h4>Results</h4>
-        <p>The Incarceration Trends Project aims to inform the public dialogue, advance research, 
-            and help guide change by providing easily accessible information on jail and prison 
-            populations in every U.S. county.
-        </p>
-    </div>
+<div class="home-container">
+
+    <h4>Total SDWA Violations</h4>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Covariate</th>
+            <th scope="col">Areal Weighting</th>
+            <th scope="col">County-Level</th>
+            <th scope="col">Dasymtric Mapping</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Percent Below the Poverty Line</th>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <th scope="row">Percent People of Color</th>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <th scope="row">Rural</th>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <th scope="row">Public</th>
+            <td>pos</td>
+            <td>pos</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <th scope="row">Small Size</th>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <th scope="row">Groundwater Source</th>
+            <td>pos</td>
+            <td>pos</td>
+            <td>--</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class="home-container">
+
+    <h4>Health-Based SDWA Violations</h4>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Covariate</th>
+            <th scope="col">Areal Weighting</th>
+            <th scope="col">County-Level</th>
+            <th scope="col">Dasymtric Mapping</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Percent Below the Poverty Line</th>
+            <td>--</td>
+            <td>neg</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <th scope="row">Percent People of Color</th>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <th scope="row">Rural</th>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <th scope="row">Public</th>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <th scope="row">Small Size</th>
+            <td>--</td>
+            <td>pos</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <th scope="row">Groundwater Source</th>
+            <td>neg</td>
+            <td>neg</td>
+            <td>--</td>
+          </tr>
+        </tbody>
+      </table>
 </div>
 {% endblock %}

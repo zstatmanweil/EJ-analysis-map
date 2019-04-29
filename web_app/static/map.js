@@ -293,11 +293,9 @@ map.on('load', function () {
                 var item = document.createElement('div');
                 var key = document.createElement('span');
                 key.className = 'map-overlay';
-                key.id = 'legend';
 
                 var value = document.createElement('span');
                 value.innerHTML = clickedLayer;
-                item.appendChild(key);
                 item.appendChild(value);
                 legend.appendChild(item);
 
@@ -321,17 +319,32 @@ map.on('load', function () {
                 // Identify type of data being shown
                 if (clickedLayer === 'Total SDWA Violations') {
                     var type = 'total SDWA violations';
+                    var property = 'all_violations';
                 } else if (clickedLayer === 'Health-based SDWA Violations') {
                     var type = 'health-based SDWA violations';
+                    var property = 'health_violations';
+                } else if (clickedLayer.includes('Pov')){
+                    var type = '%';
+                    var property = 'perc_pov';
                 } else {
                     var type = '%';
+                    var property = 'perc_POC';
                 }
 
                 map.on('mousemove', clickedLayer, function (e) {
                     var pws = map.queryRenderedFeatures(e.point, {
                         layers: [clickedLayer]
                     })
-                    document.getElementById('pd').innerHTML = '<h5> PWS ID: ' + pws[0].properties.PWID + '</h5><p><em>' + pws[0].properties.all_violations + ' ' + type + '</em></p>';
+
+                    // Check if it is the areal weighting data because then percentages need to be multiplied by 100
+                    if (clickedLayer.includes('(areal')) {
+                        var pws_value = Math.floor(pws[0].properties[property]*100);
+                    } else {
+                        var pws_value = Math.floor(pws[0].properties[property]);
+                    }
+
+                    // Add pws value to overlay box
+                    document.getElementById('pd').innerHTML = '<h5> PWS ID: ' + pws[0].properties.PWID + '</h5><p><em>' + pws_value + ' ' + type + '</em></p>';
                 });
                 map.on('mouseleave', clickedLayer, function (e) {
                     document.getElementById('pd').innerHTML = '<p>Hover over a water system</p>';
