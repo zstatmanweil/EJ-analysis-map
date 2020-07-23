@@ -25,7 +25,8 @@ I am conducting the same type of spatial environmental justice analysis I did fo
   - [`regression`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/regression) 
 - [x] Get the map  and statistical results on the web!
   - The map is working! But is unfortunately not on the web. [`web_app`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/web_app)
-
+  
+![Website](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/data/ej_website.png)
 
 ## Notes
 
