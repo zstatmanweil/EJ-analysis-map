@@ -23,8 +23,8 @@ I am conducting the same type of spatial environmental justice analysis I did fo
 - [ ] Make the areal weighting and dasymetric processes reproducible through a chain of Python scripts.
 - [x] Conduct a statistical analysis of the results to determine the correlation, if any, between the EJ variables and the SDWA violations. The negative binomial regression code I created for the Pennsylvania data can be found here: 
   - [`regression`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/regression) 
-- [ ] Get the map  and statistical results on the web!
-  - *In progress:* [`web_app`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/web_app)
+- [x] Get the map  and statistical results on the web!
+  - The map is working! But is unfortunately not on the web. [`web_app`](https://github.com/zstatmanweil/EJ-analysis-map/blob/master/web_app)
 
 
 ## Notes
